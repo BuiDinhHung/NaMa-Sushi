@@ -1,0 +1,7 @@
+# Copy to .dev.vars for local development only. Never commit or paste real API keys in chat.
+RESEND_API_KEY=
+# Must belong to a verified sending domain before sending to restaurant recipients.
+MAIL_FROM="NAMA <reservierung@mail.nama-asianfusion.com>"
+MAIL_TO=nama2025.sushi@gmail.com
+MAIL_CC=
+PUBLIC_SITE_ORIGIN=https://nama-asian-fusion.nhokli210.chatgpt.site

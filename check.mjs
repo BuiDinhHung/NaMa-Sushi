@@ -2,7 +2,8 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 import {reservationEmailHTML} from './email-template.mjs';
-const source=fs.readFileSync(new URL('./dist/app.js',import.meta.url),'utf8');
+const shared=fs.readFileSync(new URL('./dist/booking.mjs',import.meta.url),'utf8').replaceAll('export function','function');
+const source=shared+fs.readFileSync(new URL('./dist/app.js',import.meta.url),'utf8').replace(/^import .*;\r?\n/,'');
 const menu=JSON.parse(fs.readFileSync(new URL('./dist/menu.json',import.meta.url)));
 assert.equal(menu.length,20);
 assert.equal(menu.flatMap(c=>c.items).length,139);
@@ -24,16 +25,16 @@ for(const name of ['index.html','impressum.html','datenschutz.html','speisekarte
   assert(fs.existsSync(new URL('./dist/'+(url.split('#')[0]||'.'),import.meta.url)),`${name}: missing ${url}`);
  }
 }
-function harness({enabled=true,result={success:'true'},networkError=false}={}){
- let handler, sent=0, opened=0, resets=0;
+function harness({enabled=true,result={success:'true'},networkError=false,provider='formsubmit'}={}){
+ let handler, sent=0, opened=0, resets=0;const ids=[];
  let date=new Date();date.setUTCDate(date.getUTCDate()+2);while(date.getUTCDay()===1)date.setUTCDate(date.getUTCDate()+1);
  const data={name:'Test Guest',phone:'+49 123456789',email:'test@example.com',date:date.toISOString().slice(0,10),time:'18:00',guests:'2',privacy:'on',note:'',website:''};
  const button={disabled:false,textContent:''},status={textContent:''};
  const form={elements:{date:{},time:{add(){}},guests:{add(){}}},dataset:{},querySelector:()=>button,addEventListener(type,fn){handler=fn;},reset(){resets++;}};
  const nodes={'#reservation-form':form,'#form-status':status,'#booking-summary':{textContent:''},'#success-dialog':{showModal(){opened++;}}};
- const context=vm.createContext({console,Intl,Date,AbortSignal,Error,TypeError,FormData:class{constructor(){return Object.entries(data);}},Option:class{},window:{},document:{querySelector:s=>nodes[s]||null,querySelectorAll:()=>[],addEventListener(){}},fetch:async(url,options)=>{if(url==='booking-config.json')return {ok:true,json:async()=>({recipient:'test@example.com',cc:'copy@example.com',enabled})};sent++;assert.equal(options.method,'POST');const payload=JSON.parse(options.body);assert.equal(payload.Personen,'2');assert.equal(payload._template,'table');assert.equal(payload._cc,'copy@example.com');assert.equal(payload._replyto,data.email);assert.match(payload._subject,/NAMA.*18:00 Uhr.*2 Gäste/);assert(payload.Termin.includes('2026')||payload.Termin.includes(String(date.getUTCFullYear())));assert(!payload.Termin.includes('T12:'));if(networkError)throw new TypeError('offline');return {ok:true,json:async()=>result};}});
+ const context=vm.createContext({console,Intl,Date,AbortSignal,Error,TypeError,crypto:globalThis.crypto,FormData:class{constructor(){return Object.entries(data);}},Option:class{},window:{},document:{querySelector:s=>nodes[s]||null,querySelectorAll:()=>[],addEventListener(){}},fetch:async(url,options)=>{if(url==='booking-config.json')return {ok:true,json:async()=>({recipient:'test@example.com',cc:'copy@example.com',enabled,provider,endpoint:'https://api.example/api/reservations'})};sent++;assert.equal(options.method,'POST');const payload=JSON.parse(options.body);if(provider==='resend'){assert.equal(url,'https://api.example/api/reservations');assert.equal(payload.guests,'2');assert.equal(payload.privacy,'on');assert.match(payload.requestId,/^[a-f\d-]{36}$/);assert.equal(payload._subject,undefined);ids.push(payload.requestId);}else{assert.equal(payload.Personen,'2');assert.equal(payload._template,'table');assert.equal(payload._cc,'copy@example.com');assert.equal(payload._replyto,data.email);assert.match(payload._subject,/NAMA.*18:00 Uhr.*2 Gäste/);assert(payload.Termin.includes('2026')||payload.Termin.includes(String(date.getUTCFullYear())));assert(!payload.Termin.includes('T12:'));}if(networkError)throw new TypeError('offline');return {ok:true,json:async()=>result};}});
  vm.runInContext(source,context);
- return {data,status,button,context,submit:()=>handler({preventDefault(){}}),stats:()=>({sent,opened,resets})};
+ return {data,status,button,context,ids,submit:()=>handler({preventDefault(){}}),stats:()=>({sent,opened,resets})};
 }
 let h=harness();await h.submit();assert.deepEqual(h.stats(),{sent:1,opened:1,resets:1});assert.equal(h.button.disabled,false);
 for(const options of [{result:{success:false}},{result:{success:'true',message:'Please activate your form'}},{networkError:true},{enabled:false}]){h=harness(options);await h.submit();assert.equal(h.stats().opened,0);assert.equal(h.stats().resets,0);assert(h.status.textContent);assert.equal(h.button.disabled,false);}
@@ -53,3 +54,7 @@ console.log('PASS: 139 menu entries, 65 unique photographs (23 generated and 42 
 const htmlEmail=reservationEmailHTML({name:'<script>alert(1)</script>',email:'guest@example.com',phone:'+49 123456789',date:'2026-10-21',time:'21:30',guests:'5',note:'<img src=x onerror=alert(1)>\nAm Fenster'});
 assert(!htmlEmail.includes('<script>'));assert(!htmlEmail.includes('<img src=x'));assert(htmlEmail.includes('&lt;script&gt;'));assert(htmlEmail.includes('<br>Am Fenster'));assert(htmlEmail.includes('mailto:guest@example.com'));assert(htmlEmail.includes('21:30 Uhr'));assert(htmlEmail.includes('5 Gäste'));
 console.log('PASS: custom HTML email escapes guest input and preserves booking details; template is a preview until an HTML email provider is configured.');
+
+h=harness({provider:'resend'});await h.submit();assert.deepEqual(h.stats(),{sent:1,opened:1,resets:1});
+h=harness({provider:'resend',networkError:true});await h.submit();await h.submit();assert.equal(h.ids[0],h.ids[1]);assert.equal(h.stats().opened,0);assert.equal(h.stats().resets,0);h.data.time='19:00';await h.submit();assert.notEqual(h.ids[1],h.ids[2]);
+console.log('PASS: frontend Resend payload, success/failure and stable retry identifiers. All email requests mocked.');

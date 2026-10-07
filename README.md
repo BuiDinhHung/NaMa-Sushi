@@ -53,3 +53,7 @@ Xác nhận email nhận bàn và email thực tế tới hộp thư, kiểm tra
 - Email đang gửi qua FormSubmit đã chuyển từ `box` sang `table`, gồm 7 dòng, gộp ngày/giờ và bỏ phần nhắc lại. Tiêu đề động, Reply-To và CC giữ nguyên.
 - `email-template.mjs` là mẫu HTML riêng với màu kem–đỏ NAMA, lịch hẹn nổi bật và nút trả lời khách. `node preview-email.mjs` tạo `dist/email-preview.html` bằng dữ liệu minh họa, không gửi email.
 - FormSubmit chỉ hỗ trợ 3 mẫu cố định, không hỗ trợ HTML/CSS tùy biến: https://formsubmit.co/email-templates. Mẫu NAMA đang là bản xem thiết kế; cần kết nối SMTP/Gmail hoặc dịch vụ gửi HTML như Resend trước khi dùng cho thư nhận thực tế. Chưa thay dịch vụ gửi mail và chưa gửi email thử.
+
+## Chuẩn bị chuyển sang Resend
+
+Xem `RESEND-SETUP.md`. Mã API, mẫu HTML và form đã chuẩn bị; API chưa triển khai, chưa cấu hình secret và tên miền chưa xác thực. Website tiếp tục gửi bằng cấu hình FormSubmit đã có đến khi kích hoạt Resend. `node check.mjs` và `node check-resend.mjs` kiểm tra giả lập, không gửi email thật.

@@ -1,3 +1,4 @@
+import {berlinNow,bookingError,bookingSubject} from './booking.mjs';
 const $ = (s) => document.querySelector(s);
 const escapeHTML = (s) => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const navToggle = $('.nav-toggle');
@@ -45,32 +46,11 @@ if ($('#gallery')) {
 }
 document.addEventListener('click',e=>{const button=e.target.closest('[data-image]');if(!button)return;$('#lightbox img').src=button.dataset.image;$('#lightbox img').alt=button.querySelector('img').alt;$('#lightbox').showModal();});
 document.querySelectorAll('dialog').forEach(dialog=>{dialog.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>dialog.close()));dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});});
-function berlinNow(now = new Date()) {
- const p = Object.fromEntries(new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Berlin',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(now).map(x=>[x.type,x.value]));
- return {date:`${p.year}-${p.month}-${p.day}`,time:`${p.hour}:${p.minute}`};
-}
-function bookingError(data, now = new Date()) {
- const current=berlinNow(now);
- if (!/^\d{4}-\d{2}-\d{2}$/.test(data.date)||!/^\d{2}:\d{2}$/.test(data.time))return 'Bitte wählen Sie Datum und Uhrzeit.';
- const day = new Date(data.date+'T12:00:00Z');
- if (Number.isNaN(day.valueOf()) || day.toISOString().slice(0,10)!==data.date)return 'Bitte wählen Sie ein gültiges Datum.';
- if (data.date<current.date || (data.date===current.date && data.time<=current.time))return 'Bitte wählen Sie einen Termin in der Zukunft.';
- if (day.getUTCDay()===1)return 'Montags haben wir geschlossen. Bitte wählen Sie einen anderen Tag.';
- if(!/^(1[2-9]|2[01]):(00|30)$/.test(data.time))return 'Bitte wählen Sie eine Uhrzeit zwischen 12:00 und 21:30 Uhr.';
- if(!/^([1-9]|10)$/.test(data.guests))return 'Bitte wählen Sie 1 bis 10 Gäste. Für größere Gruppen rufen Sie uns bitte an.';
- if(!data.name?.trim()||data.name.length>100)return 'Bitte geben Sie Ihren Namen an.';
- if(!/^[+\d\s()./-]{6,40}$/.test(data.phone)||data.phone.replace(/\D/g,'').length<6)return 'Bitte geben Sie eine gültige Telefonnummer an.';
- if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)||data.email.length>254)return 'Bitte geben Sie eine gültige E-Mail-Adresse an.';
- if((data.note||'').length>1000)return 'Ihre Nachricht darf maximal 1000 Zeichen enthalten.';
- if(data.privacy!=='on')return 'Bitte bestätigen Sie die Datenschutzhinweise.';
- return '';
-}
 function bookingEmail(data, config) {
  const date=new Intl.DateTimeFormat('de-DE',{weekday:'long',day:'2-digit',month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(data.date+'T12:00:00Z'));
- const shortDate=new Intl.DateTimeFormat('de-DE',{day:'2-digit',month:'2-digit',year:'numeric',timeZone:'UTC'}).format(new Date(data.date+'T12:00:00Z'));
  const guests=`${data.guests} ${data.guests==='1'?'Gast':'Gäste'}`;
  return {
-  _subject:`[NAMA] Neue Tischanfrage | ${shortDate}, ${data.time} Uhr | ${guests} | ${data.name.replace(/\s+/g,' ').trim()}`,
+  _subject:bookingSubject(data),
   _template:'table',_replyto:data.email,...(config.cc?{_cc:config.cc}:{}),
   Termin:`${date}, ${data.time} Uhr (Bad Oldesloe)`,Personen:data.guests,
   Gast:data.name.trim(),Telefon:data.phone.trim(),email:data.email.trim(),
@@ -79,6 +59,7 @@ function bookingEmail(data, config) {
   _honey:data.website||''
  };
 }
+let pendingBooking;
 const form=$('#reservation-form');
 if(form){
  form.elements.date.min=berlinNow().date;
@@ -93,15 +74,19 @@ if(form){
   try {
    const configResponse=await fetch('booking-config.json');if(!configResponse.ok)throw Error('Konfiguration nicht verfügbar.');const config=await configResponse.json();
    if(!config.enabled)throw Error('Online-Anfragen sind noch nicht freigeschaltet. Bitte reservieren Sie telefonisch unter 04531 4259856.');
-   const response=await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(config.recipient)}`,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},signal:AbortSignal.timeout(20000),body:JSON.stringify(bookingEmail(data,config))});
+   const resend=config.provider==='resend';
+   if(resend&&!/^https:\/\//.test(config.endpoint||''))throw Error('Online-Anfragen sind noch nicht verfügbar. Bitte reservieren Sie telefonisch.');
+   const details=JSON.stringify(data);
+   if(resend&&pendingBooking?.details!==details)pendingBooking={details,id:crypto.randomUUID()};
+   const response=await fetch(resend?config.endpoint:`https://formsubmit.co/ajax/${encodeURIComponent(config.recipient)}`,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},signal:AbortSignal.timeout(20000),body:JSON.stringify(resend?{...data,requestId:pendingBooking.id}:bookingEmail(data,config))});
    const result=await response.json();
    if(!response.ok || ![true,'true'].includes(result.success) || /activat|confirm your email|verify your email/i.test(result.message||'')){
-    console.warn('FormSubmit:', response.status, result);
+    console.warn('Reservierung:', response.status, result);
     const local=/^(localhost|127\.0\.0\.1)$/.test(window.location?.hostname||'');
     throw Error('Ihre Anfrage konnte noch nicht übermittelt werden. Bitte rufen Sie uns unter 04531 4259856 an.'+(local&&result.message?` [Test: ${result.message}]`:''));
    }
    $('#booking-summary').textContent=`${new Intl.DateTimeFormat('de-DE',{dateStyle:'long',timeZone:'UTC'}).format(new Date(data.date+'T12:00:00Z'))} · ${data.time} Uhr · ${data.guests} ${data.guests==='1'?'Person':'Personen'}`;
-   $('#success-dialog').showModal();form.reset();
+   $('#success-dialog').showModal();form.reset();pendingBooking=undefined;
   }catch(error){status.textContent=error.name==='TimeoutError'?'Keine eindeutige Rückmeldung vom Versanddienst. Bitte rufen Sie uns an, bevor Sie die Anfrage erneut senden.':(error instanceof TypeError?'Verbindung fehlgeschlagen. Bitte prüfen Sie Ihre Internetverbindung oder rufen Sie uns an.':error.message);}
   finally{delete form.dataset.sending;button.disabled=false;button.textContent='Reservierung anfragen';}
  });
