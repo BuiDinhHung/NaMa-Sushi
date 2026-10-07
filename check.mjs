@@ -43,7 +43,7 @@ h=harness();h.data.privacy='';await h.submit();assert.equal(h.stats().sent,0);
 h=harness();await Promise.all([h.submit(),h.submit()]);assert.equal(h.stats().sent,1);
 const ctx=h.context;
 const email=vm.runInContext(`bookingEmail({date:'2026-10-09',time:'18:30',guests:'1',name:'  Max Mustermann  ',phone:'+49 123456789',email:'max@example.com',note:'',website:''},{cc:'copy@example.com'})`,ctx);
-assert.equal(email._template,'box');assert.match(email._subject,/09\.10\.2026.*18:30 Uhr.*1 Gast.*Max Mustermann$/);
+assert.equal(email._template,'box');assert.equal(email._subject,'[NAMA] Neue Tischanfrage | 09.10.2026, 18:30 Uhr | 1 Gast | Max Mustermann');
 assert.equal(email.Datum,'Freitag, 09. Oktober 2026');assert.equal(email.Gast,'Max Mustermann');assert.equal(email['Wünsche und Hinweise'],'Keine besonderen Wünsche');assert.equal(email._cc,'copy@example.com');
 assert.equal(vm.runInContext(`berlinNow(new Date('2026-10-06T22:30:00Z')).date`,ctx),'2026-10-07');
 assert.equal(vm.runInContext(`berlinNow(new Date('2026-12-06T22:30:00Z')).date`,ctx),'2026-12-06');

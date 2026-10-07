@@ -70,7 +70,7 @@ function bookingEmail(data, config) {
  const shortDate=new Intl.DateTimeFormat('de-DE',{day:'2-digit',month:'2-digit',year:'numeric',timeZone:'UTC'}).format(new Date(data.date+'T12:00:00Z'));
  const guests=`${data.guests} ${data.guests==='1'?'Gast':'Gäste'}`;
  return {
-  _subject:`NAMA | ${shortDate} · ${data.time} Uhr · ${guests} | ${data.name.trim()}`,
+  _subject:`[NAMA] Neue Tischanfrage | ${shortDate}, ${data.time} Uhr | ${guests} | ${data.name.replace(/\s+/g,' ').trim()}`,
   _template:'box',_replyto:data.email,...(config.cc?{_cc:config.cc}:{}),
   'NAMA · NEUE TISCHANFRAGE':`${date} · ${data.time} Uhr · ${guests}`,
   Status:'Neue Anfrage — bitte Verfügbarkeit prüfen und dem Gast persönlich bestätigen.',
