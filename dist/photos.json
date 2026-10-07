@@ -1,5 +1,189 @@
 [
   {
+    "src": "generated/hero-landscape.webp",
+    "alt": "Sushi-Auswahl auf einer Holzbrücke und Schieferplatte",
+    "width": 1672,
+    "height": 941,
+    "background": "#211511",
+    "generated": true
+  },
+  {
+    "src": "generated/menu-11.webp",
+    "alt": "Special Rolls auf einem blauen Teller",
+    "width": 1672,
+    "height": 941,
+    "background": "#211511",
+    "generated": true
+  },
+  {
+    "src": "generated/story-portrait.webp",
+    "alt": "Lachs- und Thunfisch-Nigiri auf einer dunklen Platte",
+    "width": 1086,
+    "height": 1448,
+    "background": "#211511",
+    "generated": true
+  },
+  {
+    "src": "generated/menu-14.webp",
+    "alt": "Sushi-Menü zum Teilen",
+    "width": 1672,
+    "height": 941,
+    "background": "#211511",
+    "generated": true
+  },
+  {
+    "src": "generated/menu-01.webp",
+    "alt": "Gyoza mit Dip",
+    "width": 1672,
+    "height": 941,
+    "background": "#211511",
+    "generated": true
+  },
+  {
+    "src": "generated/menu-03.webp",
+    "alt": "Bowl mit Lachs und Gemüse",
+    "width": 1672,
+    "height": 941,
+    "background": "#211511",
+    "generated": true
+  },
+  {
+    "src": "generated/menu-12.webp",
+    "alt": "Lachs-Sashimi auf Eis",
+    "width": 1672,
+    "height": 941,
+    "background": "#211511",
+    "generated": true
+  },
+  {
+    "src": "generated/menu-13.webp",
+    "alt": "Knusprige Sushi-Rollen",
+    "width": 1672,
+    "height": 941,
+    "background": "#211511",
+    "generated": true
+  },
+  {
+    "src": "generated/menu-18.webp",
+    "alt": "Hausgemachte Getränke",
+    "width": 1672,
+    "height": 941,
+    "background": "#211511",
+    "generated": true
+  },
+  {
+    "src": "generated/hero-mobile.webp",
+    "alt": "Sushi-Auswahl in einer Komposition für die mobile Ansicht",
+    "width": 1024,
+    "height": 1536,
+    "background": "#211511",
+    "generated": true
+  },
+  {
+    "src": "generated/menu-02.webp",
+    "alt": "Asiatischer Salat mit frischen Kräutern",
+    "width": 1672,
+    "height": 941,
+    "background": "#211511",
+    "generated": true
+  },
+  {
+    "src": "generated/menu-04.webp",
+    "alt": "Udon mit Rindfleisch und Gemüse",
+    "width": 1672,
+    "height": 941,
+    "background": "#211511",
+    "generated": true
+  },
+  {
+    "src": "generated/menu-05.webp",
+    "alt": "Asiatische Suppe in einer dunklen Schale",
+    "width": 1672,
+    "height": 941,
+    "background": "#211511",
+    "generated": true
+  },
+  {
+    "src": "generated/menu-06.webp",
+    "alt": "Reis und Udon als Beilagen",
+    "width": 1672,
+    "height": 941,
+    "background": "#211511",
+    "generated": true
+  },
+  {
+    "src": "generated/menu-07.webp",
+    "alt": "Lachs-Nigiri",
+    "width": 1672,
+    "height": 941,
+    "background": "#211511",
+    "generated": true
+  },
+  {
+    "src": "generated/menu-08.webp",
+    "alt": "Japanische Handwerkskunst auf dem Teller",
+    "width": 1672,
+    "height": 941,
+    "background": "#211511",
+    "generated": true
+  },
+  {
+    "src": "generated/menu-09.webp",
+    "alt": "Maki auf einem Keramikteller",
+    "width": 1672,
+    "height": 941,
+    "background": "#211511",
+    "generated": true
+  },
+  {
+    "src": "generated/menu-10.webp",
+    "alt": "Inside-Out-Rollen",
+    "width": 1672,
+    "height": 941,
+    "background": "#211511",
+    "generated": true
+  },
+  {
+    "src": "generated/menu-15.webp",
+    "alt": "Mochi-Eis",
+    "width": 1672,
+    "height": 941,
+    "background": "#211511",
+    "generated": true
+  },
+  {
+    "src": "generated/menu-16.webp",
+    "alt": "Softdrink mit Eis",
+    "width": 1672,
+    "height": 941,
+    "background": "#211511",
+    "generated": true
+  },
+  {
+    "src": "generated/menu-17.webp",
+    "alt": "Kaffee in einer dunklen Keramiktasse",
+    "width": 1672,
+    "height": 941,
+    "background": "#211511",
+    "generated": true
+  },
+  {
+    "src": "generated/menu-19.webp",
+    "alt": "Frisch gezapftes Bier",
+    "width": 1672,
+    "height": 941,
+    "background": "#211511",
+    "generated": true
+  },
+  {
+    "src": "generated/menu-20.webp",
+    "alt": "Weine",
+    "width": 1672,
+    "height": 941,
+    "background": "#211511",
+    "generated": true
+  },
+  {
     "src": "nama-01.webp",
     "alt": "Sushi-Platte mit Nigiri und Maki",
     "width": 681,

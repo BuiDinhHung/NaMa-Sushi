@@ -7,7 +7,13 @@ assert.equal(menu.length,20);
 assert.equal(menu.flatMap(c=>c.items).length,139);
 for(const c of menu){assert(fs.existsSync(new URL('./dist/assets/'+c.image,import.meta.url)));assert(c.media.length>=1);for(const p of c.media){assert(fs.existsSync(new URL('./dist/assets/'+p.src,import.meta.url)));assert(p.width>0&&p.height>0);}for(const d of c.items){assert(d.prices.length>0);assert(d.prices.every(p=>/^\d+,\d{2}€$/.test(p)));assert(d.prices.length===1||d.prices.length===d.variants.length);}}
 const photos=JSON.parse(fs.readFileSync(new URL('./dist/photos.json',import.meta.url)));
-assert.equal(photos.length,42);assert.equal(new Set(photos.map(p=>p.src)).size,42);
+assert.equal(photos.length,65);assert.equal(new Set(photos.map(p=>p.src)).size,65);
+assert.equal(photos.filter(p=>p.generated).length,23);
+for(const c of menu){assert.equal(c.media.length,1);assert(c.image.startsWith('generated/'));assert(Math.abs(c.media[0].width/c.media[0].height-16/9)<0.01);}
+const prompts=JSON.parse(fs.readFileSync(new URL('./image-prompts.json',import.meta.url)));
+assert.equal(prompts.assets.length,23);assert(prompts.assets.every(p=>p.prompt&&p.references.length));
+const homepage=fs.readFileSync(new URL('./dist/index.html',import.meta.url),'utf8');
+assert(homepage.includes('assets/generated/hero-mobile.webp'));assert(homepage.includes('assets/generated/hero-landscape.webp'));assert(homepage.includes('assets/generated/story-portrait.webp'));
 assert.equal(photos.filter(p=>p.src.startsWith('nama-')).length,12);
 for(const p of photos)assert(fs.existsSync(new URL('./dist/assets/'+p.src,import.meta.url)));
 for(const name of ['index.html','impressum.html','datenschutz.html','speisekarte.html']){
@@ -41,4 +47,4 @@ assert.equal(email._template,'box');assert.match(email._subject,/09\.10\.2026.*1
 assert.equal(email.Datum,'Freitag, 09. Oktober 2026');assert.equal(email.Gast,'Max Mustermann');assert.equal(email['Wünsche und Hinweise'],'Keine besonderen Wünsche');assert.equal(email._cc,'copy@example.com');
 assert.equal(vm.runInContext(`berlinNow(new Date('2026-10-06T22:30:00Z')).date`,ctx),'2026-10-07');
 assert.equal(vm.runInContext(`berlinNow(new Date('2026-12-06T22:30:00Z')).date`,ctx),'2026-12-06');
-console.log('PASS: 139 menu entries, 42 unique photographs (all 12 new), illustrated menu/routes, German email format, box template, Reply-To/CC, booking validation, Berlin timezone, success/failure and duplicate-submit protection. Email requests mocked; no email sent.');
+console.log('PASS: 139 menu entries, 65 unique photographs (23 generated and 42 originals), responsive hero, 20 landscape menu images, saved prompts, routes, German email format, box template, Reply-To/CC, booking validation, Berlin timezone, success/failure and duplicate-submit protection. Email requests mocked; no email sent.');

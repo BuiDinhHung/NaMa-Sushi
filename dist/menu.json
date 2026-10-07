@@ -1,7 +1,7 @@
 [
   {
     "name": "Suppen & Vorspeisen",
-    "image": "original-03.webp",
+    "image": "generated/menu-01.webp",
     "items": [
       {
         "name": "1. EDAMAME",
@@ -142,24 +142,18 @@
     ],
     "media": [
       {
-        "src": "original-03.webp",
+        "src": "generated/menu-01.webp",
         "alt": "Gyoza mit Dip",
-        "width": 1024,
-        "height": 535,
-        "background": "#b98a60"
-      },
-      {
-        "src": "nama-09.webp",
-        "alt": "Japanische Gyoza",
-        "width": 1200,
-        "height": 1600,
-        "background": "#837b72"
+        "width": 1672,
+        "height": 941,
+        "background": "#211511",
+        "generated": true
       }
     ]
   },
   {
     "name": "Salate",
-    "image": "original-04.webp",
+    "image": "generated/menu-02.webp",
     "items": [
       {
         "name": "20. MANGO SALAT",
@@ -191,24 +185,18 @@
     ],
     "media": [
       {
-        "src": "original-04.webp",
+        "src": "generated/menu-02.webp",
         "alt": "Asiatischer Salat mit frischen Kräutern",
-        "width": 941,
-        "height": 858,
-        "background": "#5a4c3a"
-      },
-      {
-        "src": "nama-08.webp",
-        "alt": "Tatar mit Avocado",
-        "width": 683,
-        "height": 836,
-        "background": "#6c6c69"
+        "width": 1672,
+        "height": 941,
+        "background": "#211511",
+        "generated": true
       }
     ]
   },
   {
     "name": "Bowls",
-    "image": "original-05.webp",
+    "image": "generated/menu-03.webp",
     "items": [
       {
         "name": "30. SAKE BOWL",
@@ -253,24 +241,18 @@
     ],
     "media": [
       {
-        "src": "original-05.webp",
+        "src": "generated/menu-03.webp",
         "alt": "Bowl mit Lachs und Gemüse",
-        "width": 921,
-        "height": 745,
-        "background": "#423222"
-      },
-      {
-        "src": "original-29.webp",
-        "alt": "Frisch angerichtete Bowl",
-        "width": 1050,
-        "height": 1040,
-        "background": "#442c1e"
+        "width": 1672,
+        "height": 941,
+        "background": "#211511",
+        "generated": true
       }
     ]
   },
   {
     "name": "Hauptspeisen",
-    "image": "original-06.webp",
+    "image": "generated/menu-04.webp",
     "items": [
       {
         "name": "40. CURRY COCO",
@@ -363,24 +345,18 @@
     ],
     "media": [
       {
-        "src": "original-06.webp",
+        "src": "generated/menu-04.webp",
         "alt": "Udon mit Rindfleisch und Gemüse",
-        "width": 1024,
-        "height": 718,
-        "background": "#606261"
-      },
-      {
-        "src": "original-28.webp",
-        "alt": "Hauptgericht bei NAMA",
-        "width": 1058,
-        "height": 1066,
-        "background": "#51403b"
+        "width": 1672,
+        "height": 941,
+        "background": "#211511",
+        "generated": true
       }
     ]
   },
   {
     "name": "Vietnamesische Spezialitäten",
-    "image": "original-07.webp",
+    "image": "generated/menu-05.webp",
     "items": [
       {
         "name": "45. PHO NAMA",
@@ -409,24 +385,18 @@
     ],
     "media": [
       {
-        "src": "original-07.webp",
+        "src": "generated/menu-05.webp",
         "alt": "Asiatische Suppe in einer dunklen Schale",
-        "width": 687,
-        "height": 1024,
-        "background": "#161412"
-      },
-      {
-        "src": "original-28.webp",
-        "alt": "Hauptgericht bei NAMA",
-        "width": 1058,
-        "height": 1066,
-        "background": "#51403b"
+        "width": 1672,
+        "height": 941,
+        "background": "#211511",
+        "generated": true
       }
     ]
   },
   {
     "name": "Beilagen",
-    "image": "original-08.webp",
+    "image": "generated/menu-06.webp",
     "items": [
       {
         "name": "Jasminreis",
@@ -455,17 +425,18 @@
     ],
     "media": [
       {
-        "src": "original-08.webp",
-        "alt": "Zubereitung von Sushi",
-        "width": 718,
-        "height": 1024,
-        "background": "#5d5854"
+        "src": "generated/menu-06.webp",
+        "alt": "Reis und Udon als Beilagen",
+        "width": 1672,
+        "height": 941,
+        "background": "#211511",
+        "generated": true
       }
     ]
   },
   {
     "name": "Nigiri · 2 Stück",
-    "image": "original-17.webp",
+    "image": "generated/menu-07.webp",
     "items": [
       {
         "name": "50. SAKE NIGIRI",
@@ -518,24 +489,18 @@
     ],
     "media": [
       {
-        "src": "original-17.webp",
+        "src": "generated/menu-07.webp",
         "alt": "Lachs-Nigiri",
-        "width": 1024,
-        "height": 617,
-        "background": "#fbf7e9"
-      },
-      {
-        "src": "nama-06.webp",
-        "alt": "Frisches Lachs- und Thunfisch-Sashimi",
-        "width": 685,
-        "height": 832,
-        "background": "#362a21"
+        "width": 1672,
+        "height": 941,
+        "background": "#211511",
+        "generated": true
       }
     ]
   },
   {
     "name": "Aburi Nigiri · 2 Stück",
-    "image": "original-09.webp",
+    "image": "generated/menu-08.webp",
     "items": [
       {
         "name": "56. SAKE",
@@ -580,24 +545,18 @@
     ],
     "media": [
       {
-        "src": "original-09.webp",
+        "src": "generated/menu-08.webp",
         "alt": "Japanische Handwerkskunst auf dem Teller",
-        "width": 1008,
-        "height": 1024,
-        "background": "#857365"
-      },
-      {
-        "src": "nama-05.webp",
-        "alt": "Lachs-Sushi mit feinen Toppings",
-        "width": 684,
-        "height": 843,
-        "background": "#492217"
+        "width": 1672,
+        "height": 941,
+        "background": "#211511",
+        "generated": true
       }
     ]
   },
   {
     "name": "Maki · 6 Stück",
-    "image": "original-11.webp",
+    "image": "generated/menu-09.webp",
     "items": [
       {
         "name": "61. SAKE MAKI",
@@ -698,17 +657,18 @@
     ],
     "media": [
       {
-        "src": "original-11.webp",
+        "src": "generated/menu-09.webp",
         "alt": "Maki auf einem Keramikteller",
-        "width": 1024,
-        "height": 590,
-        "background": "#faf7e8"
+        "width": 1672,
+        "height": 941,
+        "background": "#211511",
+        "generated": true
       }
     ]
   },
   {
     "name": "Inside-Out · 8 Stück",
-    "image": "original-13.webp",
+    "image": "generated/menu-10.webp",
     "items": [
       {
         "name": "80. SAKE ROLL",
@@ -761,24 +721,18 @@
     ],
     "media": [
       {
-        "src": "original-13.webp",
+        "src": "generated/menu-10.webp",
         "alt": "Inside-Out-Rollen",
-        "width": 1024,
-        "height": 624,
-        "background": "#f9f7e8"
-      },
-      {
-        "src": "nama-02.webp",
-        "alt": "Sushi-Rollen auf einer blauen Servierplatte",
-        "width": 685,
-        "height": 835,
-        "background": "#575248"
+        "width": 1672,
+        "height": 941,
+        "background": "#211511",
+        "generated": true
       }
     ]
   },
   {
     "name": "Special Rolls · 8 Stück",
-    "image": "original-14.webp",
+    "image": "generated/menu-11.webp",
     "items": [
       {
         "name": "90. SALMON QUEEN",
@@ -879,24 +833,18 @@
     ],
     "media": [
       {
-        "src": "original-14.webp",
+        "src": "generated/menu-11.webp",
         "alt": "Special Rolls auf einem blauen Teller",
-        "width": 1024,
-        "height": 709,
-        "background": "#a8774c"
-      },
-      {
-        "src": "nama-11.webp",
-        "alt": "Sushi auf einer Holzbrücke",
-        "width": 1200,
-        "height": 1600,
-        "background": "#a27d46"
+        "width": 1672,
+        "height": 941,
+        "background": "#211511",
+        "generated": true
       }
     ]
   },
   {
     "name": "Sashimi · 6 Stück",
-    "image": "original-16.webp",
+    "image": "generated/menu-12.webp",
     "items": [
       {
         "name": "S1. LACHS",
@@ -925,24 +873,18 @@
     ],
     "media": [
       {
-        "src": "original-16.webp",
+        "src": "generated/menu-12.webp",
         "alt": "Lachs-Sashimi auf Eis",
-        "width": 728,
-        "height": 1024,
-        "background": "#545248"
-      },
-      {
-        "src": "original-15.webp",
-        "alt": "Sushi kunstvoll angerichtet",
-        "width": 1024,
-        "height": 547,
-        "background": "#f8f8ea"
+        "width": 1672,
+        "height": 941,
+        "background": "#211511",
+        "generated": true
       }
     ]
   },
   {
     "name": "Tempura Rolls",
-    "image": "original-18.webp",
+    "image": "generated/menu-13.webp",
     "items": [
       {
         "name": "110. SAKE CRUNCHY",
@@ -995,24 +937,18 @@
     ],
     "media": [
       {
-        "src": "original-18.webp",
+        "src": "generated/menu-13.webp",
         "alt": "Knusprige Sushi-Rollen",
-        "width": 837,
-        "height": 1024,
-        "background": "#746856"
-      },
-      {
-        "src": "original-19.webp",
-        "alt": "Tempura-Rollen mit Avocado",
-        "width": 1024,
-        "height": 529,
-        "background": "#fcf6ea"
+        "width": 1672,
+        "height": 941,
+        "background": "#211511",
+        "generated": true
       }
     ]
   },
   {
     "name": "Sushi-Menüs",
-    "image": "original-20.webp",
+    "image": "generated/menu-14.webp",
     "items": [
       {
         "name": "BENTO 1. VEGETARIAN LOVE",
@@ -1081,24 +1017,18 @@
     ],
     "media": [
       {
-        "src": "original-20.webp",
+        "src": "generated/menu-14.webp",
         "alt": "Sushi-Menü zum Teilen",
-        "width": 1024,
-        "height": 572,
-        "background": "#969285"
-      },
-      {
-        "src": "nama-03.webp",
-        "alt": "Sushi-Auswahl mit Lachs und Thunfisch",
-        "width": 683,
-        "height": 839,
-        "background": "#483528"
+        "width": 1672,
+        "height": 941,
+        "background": "#211511",
+        "generated": true
       }
     ]
   },
   {
     "name": "Nachtisch",
-    "image": "original-21.webp",
+    "image": "generated/menu-15.webp",
     "items": [
       {
         "name": "N1. MOCHI EIS",
@@ -1119,17 +1049,18 @@
     ],
     "media": [
       {
-        "src": "original-21.webp",
+        "src": "generated/menu-15.webp",
         "alt": "Mochi-Eis",
-        "width": 728,
-        "height": 1024,
-        "background": "#493e3f"
+        "width": 1672,
+        "height": 941,
+        "background": "#211511",
+        "generated": true
       }
     ]
   },
   {
     "name": "Softdrinks & Säfte",
-    "image": "original-22.webp",
+    "image": "generated/menu-16.webp",
     "drinks": true,
     "items": [
       {
@@ -1267,17 +1198,18 @@
     ],
     "media": [
       {
-        "src": "original-22.webp",
+        "src": "generated/menu-16.webp",
         "alt": "Softdrink mit Eis",
-        "width": 751,
-        "height": 1024,
-        "background": "#625855"
+        "width": 1672,
+        "height": 941,
+        "background": "#211511",
+        "generated": true
       }
     ]
   },
   {
     "name": "Kaffee & Tee",
-    "image": "original-23.webp",
+    "image": "generated/menu-17.webp",
     "drinks": true,
     "items": [
       {
@@ -1339,17 +1271,18 @@
     ],
     "media": [
       {
-        "src": "original-23.webp",
-        "alt": "Kaffee frisch zubereitet",
-        "width": 718,
-        "height": 1024,
-        "background": "#262322"
+        "src": "generated/menu-17.webp",
+        "alt": "Kaffee in einer dunklen Keramiktasse",
+        "width": 1672,
+        "height": 941,
+        "background": "#211511",
+        "generated": true
       }
     ]
   },
   {
     "name": "Hausgemachte Getränke",
-    "image": "original-24.webp",
+    "image": "generated/menu-18.webp",
     "drinks": true,
     "items": [
       {
@@ -1387,17 +1320,18 @@
     ],
     "media": [
       {
-        "src": "original-24.webp",
+        "src": "generated/menu-18.webp",
         "alt": "Hausgemachte Getränke",
-        "width": 741,
-        "height": 1024,
-        "background": "#79441b"
+        "width": 1672,
+        "height": 941,
+        "background": "#211511",
+        "generated": true
       }
     ]
   },
   {
     "name": "Aperitif, Digestif & Bier",
-    "image": "original-25.webp",
+    "image": "generated/menu-19.webp",
     "drinks": true,
     "items": [
       {
@@ -1487,24 +1421,18 @@
     ],
     "media": [
       {
-        "src": "original-25.webp",
+        "src": "generated/menu-19.webp",
         "alt": "Frisch gezapftes Bier",
-        "width": 718,
-        "height": 1024,
-        "background": "#53504a"
-      },
-      {
-        "src": "original-27.webp",
-        "alt": "Rosé und Aperitif",
-        "width": 718,
-        "height": 1024,
-        "background": "#a0a4a0"
+        "width": 1672,
+        "height": 941,
+        "background": "#211511",
+        "generated": true
       }
     ]
   },
   {
     "name": "Weine",
-    "image": "original-26.webp",
+    "image": "generated/menu-20.webp",
     "drinks": true,
     "items": [
       {
@@ -1594,11 +1522,12 @@
     ],
     "media": [
       {
-        "src": "original-26.webp",
+        "src": "generated/menu-20.webp",
         "alt": "Weine",
-        "width": 718,
-        "height": 1024,
-        "background": "#16130f"
+        "width": 1672,
+        "height": 941,
+        "background": "#211511",
+        "generated": true
       }
     ]
   }

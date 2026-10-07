@@ -1,0 +1,276 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "assets": [
+    {
+      "key": "hero-landscape",
+      "prompt": "Use case: photorealistic-natural. Asset type: NAMA restaurant website hero food photograph. Create a NEW photorealistic premium editorial restaurant food photograph, rephotographing the same deluxe sushi bridge and rolls from the references, rather than reproducing the source camera framing. Reference 1 primary: assorted salmon and tuna sashimi, colorful inside-out sushi rolls with avocado, fish and crispy toppings, on a dark serving platter with small wooden bridge. Reference 2 supporting: tuna wrapped deluxe roll with cucumber and avocado filling, light creamy sauce and green garnish. Preserve real sushi ingredients, filling, toppings, realistic portions and plating. Wide 16:9 landscape, ideally 2048x1152. Full cinematic coherent restaurant tabletop scene with sushi arranged on RIGHT 55%, calm empty deep charcoal/espresso tabletop LEFT 40% for a headline added later. Keep complete serving platter and sushi with generous margins; critical food in central-right area to survive mobile crop. Refined clean styling, soft warm side light, believable fresh texture, restrained highlights, red/cream restaurant palette harmony. No fake shine, no lettering, no logos, no watermark, no UI, no collage. Produce a standalone raster photograph.",
+      "references": [
+        "nama-11.webp",
+        "nama-03.webp"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\hero-landscape.png",
+      "web_asset": "dist/assets/generated/hero-landscape.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "key": "hero-mobile",
+      "prompt": "Use case: photorealistic-natural. Create a NEW premium editorial restaurant food photograph, rephotographing SAME subject from supplied original references with faithful species, ingredients, filling, toppings, real portion and plating. Refined clean styling, soft warm side light, believable fresh texture, deep charcoal/espresso tabletop fitting a red/cream restaurant website, restrained highlights, no fake shine. No lettering, logos, watermark, UI, collage. Standalone raster photograph. NAMA website MOBILE HERO photograph. Exact2:3 portrait ideally1024x1536. Use reference1 original assorted sushi platter as food identity, reference2 original tuna-wrapped deluxe rolls as detail, reference3 generated landscape hero ONLY as warm photographic style and dark tabletop guide. Recompose same deluxe sushi on COMPLETE dark slate and small wooden bridge in LOWER RIGHT60%; upper-left40% calm dark tabletop for mobile text added later. Keep main rolls within central60%, FULL foreground plate fits within photo with at least10% margins. Coherent restaurant scene. No text.",
+      "references": [
+        "nama-11.webp",
+        "nama-03.webp",
+        "hero-landscape.png"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\hero-mobile.png",
+      "web_asset": "dist/assets/generated/hero-mobile.webp",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "key": "story-portrait",
+      "prompt": "Use case: photorealistic-natural. Create a NEW premium editorial restaurant food photograph, rephotographing SAME subject from supplied original references with faithful species, ingredients, filling, toppings, real portion and plating. Refined clean styling, soft warm side light, believable fresh texture, deep charcoal/espresso tabletop fitting a red/cream restaurant website, restrained highlights, no fake shine. No lettering, logos, watermark, UI, collage. Standalone raster photograph. NAMA website story photograph. Exact 3:4 portrait ideally1200x1600. Same red tuna and orange salmon slices as pictured on a dark ceramic plate, keeping the fish presentation faithful, complete plate centered in LOWER HALF. Generous margins, clean elegant subtle restaurant atmosphere in background without neon logo or text.",
+      "references": [
+        "nama-06.webp"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\story-portrait.png",
+      "web_asset": "dist/assets/generated/story-portrait.webp",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "key": "menu-01",
+      "prompt": "Use case: photorealistic-natural. Create a NEW premium editorial restaurant food photograph, rephotographing SAME subject from supplied original references with faithful species, ingredients, filling, toppings, real portion and plating. Refined clean styling, soft warm side light, believable fresh texture, deep charcoal/espresso tabletop fitting a red/cream restaurant website, restrained highlights, no fake shine. No lettering, logos, watermark, UI, collage. Standalone raster photograph. NAMA menu appetizer photograph. Exact 16:9 landscape ideally2048x1152. Gyoza dumpling plate primary from reference1 and reference3; same golden pleated gyoza with scallion garnish and sauce. Subtle nearby original avocado-ringed tuna tartar reference2 as secondary dish, smaller in scene. One coherent restaurant tabletop photograph, realistic portion proportions. Complete plates centered within middle75%, generous margins on every edge for mobile4:3 cropping.",
+      "references": [
+        "original-03.webp",
+        "nama-09.webp",
+        "nama-08.webp"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\menu-01.png",
+      "web_asset": "dist/assets/generated/menu-01.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "key": "menu-02",
+      "prompt": "Use case: photorealistic-natural. Create a NEW premium editorial restaurant food photograph, rephotographing SAME subject from supplied original references with faithful species, ingredients, filling, toppings, real portion and plating. Refined clean styling, soft warm side light, believable fresh texture, deep charcoal/espresso tabletop fitting a red/cream restaurant website, restrained highlights, no fake shine. No lettering, logos, watermark, UI, collage. Standalone raster photograph. NAMA menu salad photograph. Exact 16:9 landscape ideally2048x1152. Same shredded Asian mango salad with carrot, red pepper, small shrimp, peanuts and mint, in an oval ceramic plate. Preserve ingredients and realistic portion from reference. Whole plate centered within middle75%, generous margins on every edge for mobile4:3 cropping.",
+      "references": [
+        "original-04.webp"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\menu-02.png",
+      "web_asset": "dist/assets/generated/menu-02.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "key": "menu-03",
+      "prompt": "Use case: photorealistic-natural. Create a NEW premium editorial restaurant food photograph, rephotographing SAME subject from supplied original references with faithful species, ingredients, filling, toppings, real portion and plating. Refined clean styling, soft warm side light, believable fresh texture, deep charcoal/espresso tabletop fitting a red/cream restaurant website, restrained highlights, no fake shine. No lettering, logos, watermark, UI, collage. Standalone raster photograph. NAMA menu salmon bowl photograph. Exact16:9 landscape ideally2048x1152. Same salmon sashimi arranged as rose in vegetable bowl: avocado, cucumber, mango strips, wakame, cherry tomatoes, edamame, corn, radish and red pepper as reference1. Reference2 supports salmon and vegetables styling only, keep single bowl identity from reference1. Complete bowl centered middle70% with at least12% margins on all edges for mobile4:3.",
+      "references": [
+        "original-05.webp",
+        "original-29.webp"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\menu-03.png",
+      "web_asset": "dist/assets/generated/menu-03.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "key": "menu-04",
+      "prompt": "Use case: photorealistic-natural. Create a NEW premium editorial restaurant food photograph, rephotographing SAME subject from supplied original references with faithful species, ingredients, filling, toppings, real portion and plating. Refined clean styling, soft warm side light, believable fresh texture, deep charcoal/espresso tabletop fitting a red/cream restaurant website, restrained highlights, no fake shine. No lettering, logos, watermark, UI, collage. Standalone raster photograph. NAMA menu beef udon photograph. Exact16:9 landscape ideally2048x1152. Same beef udon bowl: thick udon, sliced seared beef, bok choy, carrot, red pepper, sesame and scallion. Preserve reference portion and ingredients. Complete bowl centered middle70%, at least12% margins on all edges for mobile4:3. Pull camera back enough to show entire bowl.",
+      "references": [
+        "original-06.webp"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\menu-04.png",
+      "web_asset": "dist/assets/generated/menu-04.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "key": "menu-05",
+      "prompt": "Use case: photorealistic-natural. Create a NEW premium editorial restaurant food photograph, rephotographing SAME subject from supplied original references with faithful species, ingredients, filling, toppings, real portion and plating. Refined clean styling, soft warm side light, believable fresh texture, deep charcoal/espresso tabletop fitting a red/cream restaurant website, restrained highlights, no fake shine. No lettering, logos, watermark, UI, collage. Standalone raster photograph. NAMA restaurant menu photograph. Same Vietnamese pho soup bowl with beef slices, rice noodles, bean sprouts, red chili and fresh herbs as pictured. Whole dark bowl, gentle believable steam. Exact16:9 landscape ideally2048x1152. Pull camera back: complete dish centered within middle70%, generous12% margins on all edges, breathing room above/below for mobile4:3 crop. ",
+      "references": [
+        "original-07.webp"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\menu-05.png",
+      "web_asset": "dist/assets/generated/menu-05.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "key": "menu-06",
+      "prompt": "Use case: photorealistic-natural. Create a NEW premium editorial restaurant food photograph, rephotographing SAME subject from supplied original references with faithful species, ingredients, filling, toppings, real portion and plating. Refined clean styling, soft warm side light, believable fresh texture, deep charcoal/espresso tabletop fitting a red/cream restaurant website, restrained highlights, no fake shine. No lettering, logos, watermark, UI, collage. Standalone raster photograph. NAMA restaurant menu photograph. Simple side rice photograph inspired by the sushi rice preparation reference. One small ceramic bowl of plain white sushi rice, with a small plain udon portion nearby. Preserve rice texture seen in reference; no added protein, vegetables, sauce or ingredients. No hands or cooking action. Exact16:9 landscape ideally2048x1152. Pull camera back: complete dish centered within middle70%, generous12% margins on all edges, breathing room above/below for mobile4:3 crop. ",
+      "references": [
+        "original-08.webp"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\menu-06.png",
+      "web_asset": "dist/assets/generated/menu-06.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "key": "menu-07",
+      "prompt": "Use case: photorealistic-natural. Create a NEW premium editorial restaurant food photograph, rephotographing SAME subject from supplied original references with faithful species, ingredients, filling, toppings, real portion and plating. Refined clean styling, soft warm side light, believable fresh texture, deep charcoal/espresso tabletop fitting a red/cream restaurant website, restrained highlights, no fake shine. No lettering, logos, watermark, UI, collage. Standalone raster photograph. NAMA restaurant menu photograph. Same salmon nigiri: TWO pieces primary reference1, salmon slices on rice with small radish slices, neatly arranged on ceramic plate. Reference2 supplies faithful fresh salmon color and texture only, do not add tuna or extra sushi. Exact16:9 landscape ideally2048x1152. Pull camera back: complete dish centered within middle70%, generous12% margins on all edges, breathing room above/below for mobile4:3 crop. ",
+      "references": [
+        "original-17.webp",
+        "nama-06.webp"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\menu-07.png",
+      "web_asset": "dist/assets/generated/menu-07.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "key": "menu-08",
+      "prompt": "Use case: photorealistic-natural. Create a NEW premium editorial restaurant food photograph, rephotographing SAME subject from supplied original references with faithful species, ingredients, filling, toppings, real portion and plating. Refined clean styling, soft warm side light, believable fresh texture, deep charcoal/espresso tabletop fitting a red/cream restaurant website, restrained highlights, no fake shine. No lettering, logos, watermark, UI, collage. Standalone raster photograph. NAMA restaurant menu photograph. Same salmon nigiri reference1 with gently torched salmon topping, creamy sauce, a little orange roe, delicate green garnish and lacy crisp. Keep ONE elegant nigiri presentation as reference1. Reference2 supports salmon texture and green garnish only; do not substitute roll plate. Complete dark ceramic plate. Exact16:9 landscape ideally2048x1152. Pull camera back: complete dish centered within middle70%, generous12% margins on all edges, breathing room above/below for mobile4:3 crop. ",
+      "references": [
+        "original-09.webp",
+        "nama-05.webp"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\menu-08.png",
+      "web_asset": "dist/assets/generated/menu-08.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "key": "menu-09",
+      "prompt": "Use case: photorealistic-natural. Create a NEW premium editorial restaurant food photograph, rephotographing SAME subject from supplied original references with faithful species, ingredients, filling, toppings, real portion and plating. Refined clean styling, soft warm side light, believable fresh texture, deep charcoal/espresso tabletop fitting a red/cream restaurant website, restrained highlights, no fake shine. No lettering, logos, watermark, UI, collage. Standalone raster photograph. NAMA restaurant menu photograph. Same salmon maki: SIX compact pieces of nori-wrapped white sushi rice with salmon filling, arranged neatly on rectangular ceramic plate, no invented avocado or toppings. Faithful roll texture and simple plating from reference. Exact16:9 landscape ideally2048x1152. Pull camera back: complete dish centered within middle70%, generous12% margins on all edges, breathing room above/below for mobile4:3 crop. ",
+      "references": [
+        "original-11.webp"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\menu-09.png",
+      "web_asset": "dist/assets/generated/menu-09.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "key": "menu-10",
+      "prompt": "Use case: photorealistic-natural. Create a NEW premium editorial restaurant food photograph, rephotographing SAME subject from supplied original references with faithful species, ingredients, filling, toppings, real portion and plating. Refined clean styling, soft warm side light, believable fresh texture, deep charcoal/espresso tabletop fitting a red/cream restaurant website, restrained highlights, no fake shine. No lettering, logos, watermark, UI, collage. Standalone raster photograph. NAMA restaurant menu photograph. Same inside-out roll plate from primary reference1: eight rice-outside rolls with black sesame, white seafood and avocado filling, yellow mango covering, small red chili rings and green garnish. Reference2 supports photographic sushi detail only, do not replace primary toppings with red fish. Coherent single ceramic plate, visible matching filling. Exact16:9 landscape ideally2048x1152. Pull camera back: complete dish centered within middle70%, generous12% margins on all edges, breathing room above/below for mobile4:3 crop. ",
+      "references": [
+        "original-13.webp",
+        "nama-02.webp"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\menu-10.png",
+      "web_asset": "dist/assets/generated/menu-10.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "key": "menu-11",
+      "prompt": "Use case: photorealistic-natural. Create a NEW premium editorial restaurant food photograph, rephotographing SAME subject from supplied original references with faithful species, ingredients, filling, toppings, real portion and plating. Refined clean styling, soft warm side light, believable fresh texture, deep charcoal/espresso tabletop fitting a red/cream restaurant website, restrained highlights, no fake shine. No lettering, logos, watermark, UI, collage. Standalone raster photograph. NAMA restaurant menu photograph. Deluxe special sushi rolls on single coherent oval ceramic plate. Primary reference1: rice-outside rolls wrapped in lightly seared tuna with green leaf, cucumber, mango and tuna filling, dark sauce, sesame and microgreens, edible purple flower. Preserve these toppings and real portion. Other references support deluxe restaurant sushi styling only; no entire mixed sharing platter and no new dish ingredients. Exact16:9 landscape ideally2048x1152. Pull camera back: complete dish centered within middle70%, generous12% margins on all edges, breathing room above/below for mobile4:3 crop. ",
+      "references": [
+        "original-14.webp",
+        "nama-11.webp",
+        "nama-04.webp"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\menu-11.png",
+      "web_asset": "dist/assets/generated/menu-11.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "key": "menu-12",
+      "prompt": "Use case: photorealistic-natural. Create a NEW premium editorial restaurant food photograph, rephotographing SAME subject from supplied original references with faithful species, ingredients, filling, toppings, real portion and plating. Refined clean styling, soft warm side light, believable fresh texture, deep charcoal/espresso tabletop fitting a red/cream restaurant website, restrained highlights, no fake shine. No lettering, logos, watermark, UI, collage. Standalone raster photograph. NAMA restaurant menu photograph. Same salmon SASHIMI from primary reference1 served on ice: salmon slices, shredded white daikon, green shiso leaf and single purple edible flower in translucent ice bowl over crushed ice on complete plate. Reference2 provides salmon texture only; no nigiri rice or tuna. Complete ice bowl and serving plate fully fits. Exact16:9 landscape ideally2048x1152. Pull camera back: complete dish centered within middle70%, generous12% margins on all edges, breathing room above/below for mobile4:3 crop. ",
+      "references": [
+        "original-16.webp",
+        "nama-06.webp"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\menu-12.png",
+      "web_asset": "dist/assets/generated/menu-12.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "key": "menu-13",
+      "prompt": "Use case: photorealistic-natural. Create a NEW premium editorial restaurant food photograph, rephotographing SAME subject from supplied original references with faithful species, ingredients, filling, toppings, real portion and plating. Refined clean styling, soft warm side light, believable fresh texture, deep charcoal/espresso tabletop fitting a red/cream restaurant website, restrained highlights, no fake shine. No lettering, logos, watermark, UI, collage. Standalone raster photograph. NAMA restaurant menu photograph. Same TEMPURA sushi roll plate from primary reference1: eight golden crumb-coated roll pieces with visible white rice and salmon filling, creamy and dark sauce drizzle, sesame, fine shredded daikon, small edible flower garnish, ginger and wasabi. Supporting references supply delicate garnish/photo styling only; preserve fried roll identity and portions, do not substitute rice-outside rolls. Exact16:9 landscape ideally2048x1152. Pull camera back: complete dish centered within middle70%, generous12% margins on all edges, breathing room above/below for mobile4:3 crop. ",
+      "references": [
+        "original-18.webp",
+        "nama-12.webp",
+        "nama-07.webp"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\menu-13.png",
+      "web_asset": "dist/assets/generated/menu-13.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "key": "menu-14",
+      "prompt": "Use case: photorealistic-natural. Create a NEW premium editorial restaurant food photograph, rephotographing SAME subject from supplied original references with faithful species, ingredients, filling, toppings, real portion and plating. Refined clean styling, soft warm side light, believable fresh texture, deep charcoal/espresso tabletop fitting a red/cream restaurant website, restrained highlights, no fake shine. No lettering, logos, watermark, UI, collage. Standalone raster photograph. NAMA restaurant menu photograph. Same assorted sushi SHARING PLATTER from primary reference1 on coherent long BLACK SLATE: salmon and tuna nigiri, nori salmon maki, colorful inside-out rolls, crispy special rolls, salmon and tuna sashimi on ice, avocado/cucumber/tuna and salmon fillings and toppings as pictured. Other refs support matching original deluxe roll detail and sashimi wood bridge styling. Entire long platter completely fits, pull camera well back, modest elevated angle, avoid clipped food, one coherent real scene. Exact16:9 landscape ideally2048x1152. Pull camera back: complete dish centered within middle70%, generous12% margins on all edges, breathing room above/below for mobile4:3 crop. ",
+      "references": [
+        "original-20.webp",
+        "nama-03.webp",
+        "nama-10.webp",
+        "nama-01.webp"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\menu-14.png",
+      "web_asset": "dist/assets/generated/menu-14.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "key": "menu-15",
+      "prompt": "Use case: photorealistic-natural. Create a NEW premium editorial restaurant food photograph, rephotographing SAME subject from supplied original references with faithful species, ingredients, filling, toppings, real portion and plating. Refined clean styling, soft warm side light, believable fresh texture, deep charcoal/espresso tabletop fitting a red/cream restaurant website, restrained highlights, no fake shine. No lettering, logos, watermark, UI, collage. Standalone raster photograph. NAMA restaurant menu photograph. THREE mochi ice cream balls inspired by same reference: two pale white and one soft pink/purple, powdery delicate rice dough texture, realistically small dessert portions on ceramic dessert plate. No extra mochi in background, no fruit added. Complete plate. Exact16:9 landscape ideally2048x1152. Pull camera back: complete dish centered within middle70%, generous12% margins on all edges, breathing room above/below for mobile4:3 crop. ",
+      "references": [
+        "original-21.webp"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\menu-15.png",
+      "web_asset": "dist/assets/generated/menu-15.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "key": "menu-16",
+      "prompt": "Use case: photorealistic-natural. Create a NEW premium editorial restaurant food photograph, rephotographing SAME subject from supplied original references with faithful species, ingredients, filling, toppings, real portion and plating. Refined clean styling, soft warm side light, believable fresh texture, deep charcoal/espresso tabletop fitting a red/cream restaurant website, restrained highlights, no fake shine. No lettering, logos, watermark, UI, collage. Standalone raster photograph. NAMA restaurant menu photograph. Same glass of cola with large ice cubes and small bubbles, clear believable glass with condensation, simple red straw as in reference. Whole drinking glass from rim to base fully visible, reframe reference closeup into elegant restaurant drink photograph. No branding. Exact16:9 landscape ideally2048x1152. Pull camera back: complete dish centered within middle70%, generous12% margins on all edges, breathing room above/below for mobile4:3 crop. ",
+      "references": [
+        "original-22.webp"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\menu-16.png",
+      "web_asset": "dist/assets/generated/menu-16.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "key": "menu-17",
+      "prompt": "Use case: photorealistic-natural. Create a NEW premium editorial restaurant food photograph, rephotographing SAME subject from supplied original references with faithful species, ingredients, filling, toppings, real portion and plating. Refined clean styling, soft warm side light, believable fresh texture, deep charcoal/espresso tabletop fitting a red/cream restaurant website, restrained highlights, no fake shine. No lettering, logos, watermark, UI, collage. Standalone raster photograph. NAMA restaurant menu photograph. Same dark ceramic espresso coffee cup filled with warm golden crema, full cup and handle on saucer, elegant restaurant espresso scene with softly defocused espresso machine in background. Warm soft side light. No pouring action needed, preserve coffee type and cup identity. Exact16:9 landscape ideally2048x1152. Pull camera back: complete dish centered within middle70%, generous12% margins on all edges, breathing room above/below for mobile4:3 crop. ",
+      "references": [
+        "original-23.webp"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\menu-17.png",
+      "web_asset": "dist/assets/generated/menu-17.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "key": "menu-18",
+      "prompt": "Use case: photorealistic-natural. Create a NEW premium editorial restaurant food photograph, rephotographing SAME subject from supplied original references with faithful species, ingredients, filling, toppings, real portion and plating. Refined clean styling, soft warm side light, believable fresh texture, deep charcoal/espresso tabletop fitting a red/cream restaurant website, restrained highlights, no fake shine. No lettering, logos, watermark, UI, collage. Standalone raster photograph. NAMA restaurant menu photograph. Same homemade citrus lemonade drink from reference, tall glass with amber citrus drink, ice, lemon/orange slice, mint and small blueberry/raspberry garnish, clear glass straw. Original citrus and berries subtly nearby. Full glass with generous room above straw and below base. No invented new beverage. Exact16:9 landscape ideally2048x1152. Pull camera back: complete dish centered within middle70%, generous12% margins on all edges, breathing room above/below for mobile4:3 crop. ",
+      "references": [
+        "original-24.webp"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\menu-18.png",
+      "web_asset": "dist/assets/generated/menu-18.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "key": "menu-19",
+      "prompt": "Use case: photorealistic-natural. Create a NEW premium editorial restaurant food photograph, rephotographing SAME subject from supplied original references with faithful species, ingredients, filling, toppings, real portion and plating. Refined clean styling, soft warm side light, believable fresh texture, deep charcoal/espresso tabletop fitting a red/cream restaurant website, restrained highlights, no fake shine. No lettering, logos, watermark, UI, collage. Standalone raster photograph. NAMA restaurant menu photograph. Same tall golden draft BEER with creamy white foam in full glass as primary reference1, sitting on restaurant bar tabletop. Nearby smaller stemmed rose/aperitif drink from reference2, pink transparent liquid, one coherent real bar scene. No hands, no bottle labels, no brands. Full glasses and stems/base inside photo, beer dominant. Exact16:9 landscape ideally2048x1152. Pull camera back: complete dish centered within middle70%, generous12% margins on all edges, breathing room above/below for mobile4:3 crop. ",
+      "references": [
+        "original-25.webp",
+        "original-27.webp"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\menu-19.png",
+      "web_asset": "dist/assets/generated/menu-19.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "key": "menu-20",
+      "prompt": "Use case: photorealistic-natural. Create a NEW premium editorial restaurant food photograph, rephotographing SAME subject from supplied original references with faithful species, ingredients, filling, toppings, real portion and plating. Refined clean styling, soft warm side light, believable fresh texture, deep charcoal/espresso tabletop fitting a red/cream restaurant website, restrained highlights, no fake shine. No lettering, logos, watermark, UI, collage. Standalone raster photograph. NAMA restaurant menu photograph. Same red and white wine still-life from reference: TWO complete stemmed wine glasses, one red wine one white wine, dark unbranded wine bottle behind, restrained red and green grapes and subtle wood wine-barrel detail nearby. Preserve wine colors and ordinary realistic serving levels. No readable bottle branding, no labels or text. Full glasses including stems and bases, complete bottle inside photo. Exact16:9 landscape ideally2048x1152. Pull camera back: complete dish centered within middle70%, generous12% margins on all edges, breathing room above/below for mobile4:3 crop. ",
+      "references": [
+        "original-26.webp"
+      ],
+      "source": "C:\\Users\\Admin\\Downloads\\NaMa Sushi\\.source\\generated-nama\\menu-20.png",
+      "web_asset": "dist/assets/generated/menu-20.webp",
+      "width": 1672,
+      "height": 941
+    }
+  ]
+}

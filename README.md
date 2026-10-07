@@ -40,12 +40,10 @@ Xác nhận email nhận bàn và email thực tế tới hộp thư, kiểm tra
 - Ảnh bìa danh mục menu (`assets/cover-01..20.webp`, 16:9) được dựng từ ảnh gốc bằng `.source/make_covers.py`; chạy lại script này sau `finish_content.py`.
 - Mỗi đơn cũng được gửi bản sao (FormSubmit `_cc`) tới `nama2025.sushi@gmail.com` qua trường `cc` trong `booking-config.json`; địa chỉ CC không cần kích hoạt. Muốn ngừng gửi bản sao thì xoá trường `cc`.
 
-## Cập nhật ảnh và format email — 07/10/2026
+## Bộ ảnh tạo mới theo bố cục — 07/10/2026
 
-- `dist/photography.css`: khung ảnh theo vị trí, giữ trọn ảnh/món bằng `object-fit: contain`; hero được cân đối riêng cho desktop và điện thoại.
-- `dist/photos.json`: 42 ảnh hiện có, bao gồm 12 ảnh mới và 30 ảnh cũ. Bỏ một bản ảnh trùng (`original-10` trùng nguồn `original-01`); logo và ảnh Impressum không tính vào thư viện món ăn.
-- Thư viện xếp ảnh theo tỷ lệ thật, xem trước 9 ảnh, có nút xem toàn bộ 42 ảnh và phóng lớn. Menu 20 nhóm dùng ảnh gốc, không còn ép ảnh dọc thành bìa ngang; bản `speisekarte.html` cũng có ảnh.
-- `.source/arrange_photos.py` ở thư mục cha đọc kích thước ảnh và cập nhật metadata/bố cục, không chỉnh pixel ảnh. Chạy từ thư mục bất kỳ bằng đường dẫn script. Các ảnh gốc và cover cũ vẫn giữ nguyên.
-- Email thực tế dùng template `box` của FormSubmit: https://formsubmit.co/email-templates. `bookingEmail()` trong `dist/app.js` sắp xếp lịch hẹn trước, tiếp đến liên hệ, ghi chú và hướng dẫn xác nhận; ngày tháng tiếng Đức, giờ địa phương Bad Oldesloe; subject có ngày/giờ/số khách/tên khách. Reply-To và CC được giữ.
-- Đây là thay đổi template và nội dung của dịch vụ hiện có; FormSubmit quản lý đầu/cuối email và CSS. Không có template HTML tùy biến hoặc tự gửi email cho khách.
-- `node check.mjs` kiểm tra ảnh, đường dẫn, format email, CC/Reply-To và tình huống thành công/lỗi bằng phản hồi giả lập; không gửi email thử. Phiên hiện tại không có trình duyệt khả dụng để xác minh hình thức trong browser/mail client.
+- 23 ảnh được tạo thực sự bằng imagegen tích hợp dựa trên ảnh gốc: desktop hero 16:9, mobile hero 2:3, ảnh giới thiệu 3:4 và 20 nhóm menu 16:9. Xem `ANH-BIA-MENU.md` và `image-prompts.json` để biết vị trí, prompt và tham chiếu.
+- `dist/assets/generated/` chứa bản WebP dùng trên web; PNG đầu ra được giữ tại `../.source/generated-nama/`. Không chỉnh/cắt ảnh gốc.
+- Thư viện có 65 ảnh gồm 23 ảnh minh họa mới và 42 ảnh gốc; đủ 12 ảnh khách gửi. Menu giữ nguyên 139 món và giá trong 20 nhóm.
+- Email đặt bàn dùng template `box` của FormSubmit; ngày tháng tiếng Đức, tiêu đề có ngày/giờ/số khách/tên khách, các trường lịch hẹn và liên hệ được sắp xếp rõ ràng. Reply-To, CC và cấu hình nhận mail giữ nguyên.
+- `node check.mjs` kiểm tra dữ liệu, tài sản, tỷ lệ ảnh, đường dẫn, email và đặt bàn bằng phản hồi giả lập; không gửi email thử. Phiên hiện tại không có trình duyệt khả dụng để kiểm tra trực quan trong browser/mail client.
