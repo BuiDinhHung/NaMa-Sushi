@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
+import {reservationEmailHTML} from './email-template.mjs';
 const source=fs.readFileSync(new URL('./dist/app.js',import.meta.url),'utf8');
 const menu=JSON.parse(fs.readFileSync(new URL('./dist/menu.json',import.meta.url)));
 assert.equal(menu.length,20);
@@ -30,7 +31,7 @@ function harness({enabled=true,result={success:'true'},networkError=false}={}){
  const button={disabled:false,textContent:''},status={textContent:''};
  const form={elements:{date:{},time:{add(){}},guests:{add(){}}},dataset:{},querySelector:()=>button,addEventListener(type,fn){handler=fn;},reset(){resets++;}};
  const nodes={'#reservation-form':form,'#form-status':status,'#booking-summary':{textContent:''},'#success-dialog':{showModal(){opened++;}}};
- const context=vm.createContext({console,Intl,Date,AbortSignal,Error,TypeError,FormData:class{constructor(){return Object.entries(data);}},Option:class{},window:{},document:{querySelector:s=>nodes[s]||null,querySelectorAll:()=>[],addEventListener(){}},fetch:async(url,options)=>{if(url==='booking-config.json')return {ok:true,json:async()=>({recipient:'test@example.com',cc:'copy@example.com',enabled})};sent++;assert.equal(options.method,'POST');const payload=JSON.parse(options.body);assert.equal(payload.Personen,'2');assert.equal(payload._template,'box');assert.equal(payload._cc,'copy@example.com');assert.equal(payload._replyto,data.email);assert.match(payload._subject,/NAMA.*18:00 Uhr.*2 Gäste/);assert(payload.Datum.includes('2026')||payload.Datum.includes(String(date.getUTCFullYear())));assert(!payload.Datum.includes('T12:'));if(networkError)throw new TypeError('offline');return {ok:true,json:async()=>result};}});
+ const context=vm.createContext({console,Intl,Date,AbortSignal,Error,TypeError,FormData:class{constructor(){return Object.entries(data);}},Option:class{},window:{},document:{querySelector:s=>nodes[s]||null,querySelectorAll:()=>[],addEventListener(){}},fetch:async(url,options)=>{if(url==='booking-config.json')return {ok:true,json:async()=>({recipient:'test@example.com',cc:'copy@example.com',enabled})};sent++;assert.equal(options.method,'POST');const payload=JSON.parse(options.body);assert.equal(payload.Personen,'2');assert.equal(payload._template,'table');assert.equal(payload._cc,'copy@example.com');assert.equal(payload._replyto,data.email);assert.match(payload._subject,/NAMA.*18:00 Uhr.*2 Gäste/);assert(payload.Termin.includes('2026')||payload.Termin.includes(String(date.getUTCFullYear())));assert(!payload.Termin.includes('T12:'));if(networkError)throw new TypeError('offline');return {ok:true,json:async()=>result};}});
  vm.runInContext(source,context);
  return {data,status,button,context,submit:()=>handler({preventDefault(){}}),stats:()=>({sent,opened,resets})};
 }
@@ -43,8 +44,12 @@ h=harness();h.data.privacy='';await h.submit();assert.equal(h.stats().sent,0);
 h=harness();await Promise.all([h.submit(),h.submit()]);assert.equal(h.stats().sent,1);
 const ctx=h.context;
 const email=vm.runInContext(`bookingEmail({date:'2026-10-09',time:'18:30',guests:'1',name:'  Max Mustermann  ',phone:'+49 123456789',email:'max@example.com',note:'',website:''},{cc:'copy@example.com'})`,ctx);
-assert.equal(email._template,'box');assert.equal(email._subject,'[NAMA] Neue Tischanfrage | 09.10.2026, 18:30 Uhr | 1 Gast | Max Mustermann');
-assert.equal(email.Datum,'Freitag, 09. Oktober 2026');assert.equal(email.Gast,'Max Mustermann');assert.equal(email['Wünsche und Hinweise'],'Keine besonderen Wünsche');assert.equal(email._cc,'copy@example.com');
+assert.equal(email._template,'table');assert.equal(email._subject,'[NAMA] Neue Tischanfrage | 09.10.2026, 18:30 Uhr | 1 Gast | Max Mustermann');
+assert.equal(email.Termin,'Freitag, 09. Oktober 2026, 18:30 Uhr (Bad Oldesloe)');assert.equal(email.Gast,'Max Mustermann');assert.equal(email['Wünsche und Hinweise'],'Keine besonderen Wünsche');assert.equal(email._cc,'copy@example.com');
 assert.equal(vm.runInContext(`berlinNow(new Date('2026-10-06T22:30:00Z')).date`,ctx),'2026-10-07');
 assert.equal(vm.runInContext(`berlinNow(new Date('2026-12-06T22:30:00Z')).date`,ctx),'2026-12-06');
-console.log('PASS: 139 menu entries, 65 unique photographs (23 generated and 42 originals), responsive hero, 20 landscape menu images, saved prompts, routes, German email format, box template, Reply-To/CC, booking validation, Berlin timezone, success/failure and duplicate-submit protection. Email requests mocked; no email sent.');
+console.log('PASS: 139 menu entries, 65 unique photographs (23 generated and 42 originals), responsive hero, 20 landscape menu images, saved prompts, routes, German email format, compact table template, Reply-To/CC, booking validation, Berlin timezone, success/failure and duplicate-submit protection. Email requests mocked; no email sent.');
+
+const htmlEmail=reservationEmailHTML({name:'<script>alert(1)</script>',email:'guest@example.com',phone:'+49 123456789',date:'2026-10-21',time:'21:30',guests:'5',note:'<img src=x onerror=alert(1)>\nAm Fenster'});
+assert(!htmlEmail.includes('<script>'));assert(!htmlEmail.includes('<img src=x'));assert(htmlEmail.includes('&lt;script&gt;'));assert(htmlEmail.includes('<br>Am Fenster'));assert(htmlEmail.includes('mailto:guest@example.com'));assert(htmlEmail.includes('21:30 Uhr'));assert(htmlEmail.includes('5 Gäste'));
+console.log('PASS: custom HTML email escapes guest input and preserves booking details; template is a preview until an HTML email provider is configured.');

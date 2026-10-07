@@ -71,13 +71,11 @@ function bookingEmail(data, config) {
  const guests=`${data.guests} ${data.guests==='1'?'Gast':'Gäste'}`;
  return {
   _subject:`[NAMA] Neue Tischanfrage | ${shortDate}, ${data.time} Uhr | ${guests} | ${data.name.replace(/\s+/g,' ').trim()}`,
-  _template:'box',_replyto:data.email,...(config.cc?{_cc:config.cc}:{}),
-  'NAMA · NEUE TISCHANFRAGE':`${date} · ${data.time} Uhr · ${guests}`,
-  Status:'Neue Anfrage — bitte Verfügbarkeit prüfen und dem Gast persönlich bestätigen.',
-  Datum:date,Uhrzeit:`${data.time} Uhr · Ortszeit Bad Oldesloe`,Personen:data.guests,
+  _template:'table',_replyto:data.email,...(config.cc?{_cc:config.cc}:{}),
+  Termin:`${date}, ${data.time} Uhr (Bad Oldesloe)`,Personen:data.guests,
   Gast:data.name.trim(),Telefon:data.phone.trim(),email:data.email.trim(),
   'Wünsche und Hinweise':data.note?.trim()||'Keine besonderen Wünsche',
-  'Nächster Schritt':'Antworten Sie direkt auf diese E-Mail oder kontaktieren Sie den Gast telefonisch. Die Reservierung ist noch nicht bestätigt.',
+  Status:'Bitte Verfügbarkeit prüfen und dem Gast per Antwort auf diese E-Mail bestätigen. Noch keine bestätigte Reservierung.',
   _honey:data.website||''
  };
 }

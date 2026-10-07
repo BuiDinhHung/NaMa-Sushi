@@ -45,5 +45,11 @@ Xác nhận email nhận bàn và email thực tế tới hộp thư, kiểm tra
 - 23 ảnh được tạo thực sự bằng imagegen tích hợp dựa trên ảnh gốc: desktop hero 16:9, mobile hero 2:3, ảnh giới thiệu 3:4 và 20 nhóm menu 16:9. Xem `ANH-BIA-MENU.md` và `image-prompts.json` để biết vị trí, prompt và tham chiếu.
 - `dist/assets/generated/` chứa bản WebP dùng trên web; PNG đầu ra được giữ tại `../.source/generated-nama/`. Không chỉnh/cắt ảnh gốc.
 - Thư viện có 65 ảnh gồm 23 ảnh minh họa mới và 42 ảnh gốc; đủ 12 ảnh khách gửi. Menu giữ nguyên 139 món và giá trong 20 nhóm.
-- Email đặt bàn dùng template `box` của FormSubmit; ngày tháng tiếng Đức, tiêu đề có ngày/giờ/số khách/tên khách, các trường lịch hẹn và liên hệ được sắp xếp rõ ràng. Reply-To, CC và cấu hình nhận mail giữ nguyên.
+- Email đặt bàn dùng template `table` của FormSubmit; ngày tháng tiếng Đức, tiêu đề có ngày/giờ/số khách/tên khách, các trường lịch hẹn và liên hệ được sắp xếp rõ ràng. Reply-To, CC và cấu hình nhận mail giữ nguyên.
 - `node check.mjs` kiểm tra dữ liệu, tài sản, tỷ lệ ảnh, đường dẫn, email và đặt bàn bằng phản hồi giả lập; không gửi email thử. Phiên hiện tại không có trình duyệt khả dụng để kiểm tra trực quan trong browser/mail client.
+
+## Email gọn hơn và mẫu NAMA riêng — 07/10/2026
+
+- Email đang gửi qua FormSubmit đã chuyển từ `box` sang `table`, gồm 7 dòng, gộp ngày/giờ và bỏ phần nhắc lại. Tiêu đề động, Reply-To và CC giữ nguyên.
+- `email-template.mjs` là mẫu HTML riêng với màu kem–đỏ NAMA, lịch hẹn nổi bật và nút trả lời khách. `node preview-email.mjs` tạo `dist/email-preview.html` bằng dữ liệu minh họa, không gửi email.
+- FormSubmit chỉ hỗ trợ 3 mẫu cố định, không hỗ trợ HTML/CSS tùy biến: https://formsubmit.co/email-templates. Mẫu NAMA đang là bản xem thiết kế; cần kết nối SMTP/Gmail hoặc dịch vụ gửi HTML như Resend trước khi dùng cho thư nhận thực tế. Chưa thay dịch vụ gửi mail và chưa gửi email thử.
