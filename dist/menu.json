@@ -1,0 +1,1605 @@
+[
+  {
+    "name": "Suppen & Vorspeisen",
+    "image": "original-03.webp",
+    "items": [
+      {
+        "name": "1. EDAMAME",
+        "prices": [
+          "5,50€"
+        ],
+        "description": "Japanische Bohnen mit Meersalz",
+        "variants": []
+      },
+      {
+        "name": "2. WAKAME",
+        "prices": [
+          "5,50€"
+        ],
+        "description": "Japanischer Algensalat",
+        "variants": []
+      },
+      {
+        "name": "3. KIMCHI",
+        "prices": [
+          "6,50€"
+        ],
+        "description": "Nach koreanischer Art fermentierter Chinakohl",
+        "variants": []
+      },
+      {
+        "name": "4. GYOZA CHICKEN",
+        "prices": [
+          "6,50€"
+        ],
+        "description": "Japanische gegrillte Teigtaschen mit Hähnchenfüllung, dazu Ponzu-Soße und Lauchzwiebeln",
+        "variants": []
+      },
+      {
+        "name": "5. GYOZA VEGI",
+        "prices": [
+          "5,90€"
+        ],
+        "description": "Japanische gegrillte Teigtaschen mit Gemüsefüllung, dazu Ponzu-Soße und Lauchzwiebeln",
+        "variants": []
+      },
+      {
+        "name": "6. EBI TEMPURA – 2 STK.",
+        "prices": [
+          "6,90€"
+        ],
+        "description": "Knusprige Garnelen mit grünem Klebreis, Salat und Chili-Limetten-Dip",
+        "variants": []
+      },
+      {
+        "name": "7. CHICKEN KARAGE",
+        "prices": [
+          "6,50€"
+        ],
+        "description": "Ausgebackene Hähnchenstücke nach japanischer Art, mit Lauch und Chili-Mayo",
+        "variants": []
+      },
+      {
+        "name": "8. SOMMERROLLE (Garnelen)",
+        "prices": [
+          "6,50€"
+        ],
+        "description": "Frische Rollen aus Reispapier mit Garnelen",
+        "variants": []
+      },
+      {
+        "name": "9. SOMMERROLLE (Tofu)",
+        "prices": [
+          "5,90€"
+        ],
+        "description": "Frische Rollen aus Reispapier mit Tofu",
+        "variants": []
+      },
+      {
+        "name": "10. NEM VIETNAM",
+        "prices": [
+          "6,50€"
+        ],
+        "description": "Knusprige Frühlingsrollen mit Hähnchen, dazu Chili-Limetten-Dip",
+        "variants": []
+      },
+      {
+        "name": "11. SÜBKARTOFFEL POMMES",
+        "prices": [
+          "6,50€"
+        ],
+        "description": "Knusprige Pommesstreifen aus Süßkartoffeln",
+        "variants": []
+      },
+      {
+        "name": "12. SALMON TATAR",
+        "prices": [
+          "9,50€"
+        ],
+        "description": "Mit Lachstatar, Avocado, Nori-Cracker und Chilli Mayo",
+        "variants": []
+      },
+      {
+        "name": "13. TUNA TATAR",
+        "prices": [
+          "9,90€"
+        ],
+        "description": "Mit Thunfischtatar, Avocado, Nori-Cracker und Chilli Mayo",
+        "variants": []
+      },
+      {
+        "name": "14. YAKITORI SPIEBE",
+        "prices": [
+          "6,50€"
+        ],
+        "description": "Hühnerspieße mit Spezialsoße",
+        "variants": []
+      },
+      {
+        "name": "15. MISO SUPPE",
+        "prices": [
+          "5,50€"
+        ],
+        "description": "Japanische Miso-Suppe mit Seidentofu, Seetang und Frühlingslauch",
+        "variants": []
+      },
+      {
+        "name": "16.TOM KHA SUPPE",
+        "prices": [
+          "6,90€"
+        ],
+        "description": "Garnelen mit Zitronengras, Pilzen, Tomaten, Chili, Koriander und Kokosnusscreme",
+        "variants": []
+      },
+      {
+        "name": "17. MISO SAKE",
+        "prices": [
+          "5,50€"
+        ],
+        "description": "Japanische Miso-Suppe mit Lachs, Seetang und Frühlingslauch",
+        "variants": []
+      }
+    ],
+    "media": [
+      {
+        "src": "original-03.webp",
+        "alt": "Gyoza mit Dip",
+        "width": 1024,
+        "height": 535,
+        "background": "#b98a60"
+      },
+      {
+        "src": "nama-09.webp",
+        "alt": "Japanische Gyoza",
+        "width": 1200,
+        "height": 1600,
+        "background": "#837b72"
+      }
+    ]
+  },
+  {
+    "name": "Salate",
+    "image": "original-04.webp",
+    "items": [
+      {
+        "name": "20. MANGO SALAT",
+        "prices": [
+          "7,90€"
+        ],
+        "description": "Mangosalat, gegrillte Garnelen, Koriander, Minze, Erdnuss, Mango-Dressing | A. Garnelen | B. Tofu",
+        "variants": [
+          "A. Garnelen",
+          "B. Tofu"
+        ]
+      },
+      {
+        "name": "21. SALMON TATAKI",
+        "prices": [
+          "9,90€"
+        ],
+        "description": "Mit Lachsfiet in Sesam-Pfeffermentul Shisakresse und Ponzu Sauce",
+        "variants": []
+      },
+      {
+        "name": "22. TUNA TATAKI",
+        "prices": [
+          "11,90€"
+        ],
+        "description": "Mit Thunfischfilet in Sesam-Preffarmantel Shisokresse und Ponzu Sauce",
+        "variants": []
+      }
+    ],
+    "media": [
+      {
+        "src": "original-04.webp",
+        "alt": "Asiatischer Salat mit frischen Kräutern",
+        "width": 941,
+        "height": 858,
+        "background": "#5a4c3a"
+      },
+      {
+        "src": "nama-08.webp",
+        "alt": "Tatar mit Avocado",
+        "width": 683,
+        "height": 836,
+        "background": "#6c6c69"
+      }
+    ]
+  },
+  {
+    "name": "Bowls",
+    "image": "original-05.webp",
+    "items": [
+      {
+        "name": "30. SAKE BOWL",
+        "prices": [
+          "15,90€"
+        ],
+        "description": "Sashimi-Lachs, Avocado, Salatmix, Wakame, Edamame, Mango-Kimchi, Sushireis, Chili-Mayo, Teriyaki-Soße",
+        "variants": []
+      },
+      {
+        "name": "31. CHICKEN BOWL",
+        "prices": [
+          "14,90€"
+        ],
+        "description": "Teriyaki-Hähnchen, Avocado, Salatmix, Wakame, Edamame, Mango, Kimchi, Sushireis, Chili-Mayo, Teriyaki-Soße",
+        "variants": []
+      },
+      {
+        "name": "32. TUNA BOWL",
+        "prices": [
+          "15,90€"
+        ],
+        "description": "Gegrillter Thunfisch, Avocado, Salatmix, Wakame, Edamame, Mango-Kimchi, Sushireis, Chili-Mayo, Unagi-Soße",
+        "variants": []
+      },
+      {
+        "name": "33. SAlmon BOWL",
+        "prices": [
+          "15,90€"
+        ],
+        "description": "Gegrilltes Lachsfilet, Avocado, Salatmix, Wakame, Edamame, Mango-Kimchi, Sushireis, Chili-Mayo, Teriyaki-Soße",
+        "variants": []
+      },
+      {
+        "name": "34. TOFU BOWL",
+        "prices": [
+          "14,90€"
+        ],
+        "description": "Tofu mit Avocado, Salatmix, Wakame, Kimchi, Edamame, Mango, Sushireis und Sesam-Dressing",
+        "variants": []
+      }
+    ],
+    "media": [
+      {
+        "src": "original-05.webp",
+        "alt": "Bowl mit Lachs und Gemüse",
+        "width": 921,
+        "height": 745,
+        "background": "#423222"
+      },
+      {
+        "src": "original-29.webp",
+        "alt": "Frisch angerichtete Bowl",
+        "width": 1050,
+        "height": 1040,
+        "background": "#442c1e"
+      }
+    ]
+  },
+  {
+    "name": "Hauptspeisen",
+    "image": "original-06.webp",
+    "items": [
+      {
+        "name": "40. CURRY COCO",
+        "prices": [
+          "15,90€",
+          "16,90€",
+          "17,90€",
+          "18,90€",
+          "18,90€",
+          "19,90€"
+        ],
+        "description": "Cocos-Sauce, Saisongemüse, Thaibasilikum, Jasminreis",
+        "variants": [
+          "A. Tofu",
+          "B. Gebackenes Hähnchen",
+          "C. Rindfleisch",
+          "D. Knusprige Ente",
+          "E. Garnelen",
+          "F. Gegrillter Lachs"
+        ]
+      },
+      {
+        "name": "41. UDON YAKI",
+        "prices": [
+          "15,90€",
+          "16,90€",
+          "17,90€",
+          "18,90€",
+          "18,90€",
+          "19,90€"
+        ],
+        "description": "Gebratene Udon-Nudeln mit Saisongemüse, Pak Choi und Spezial-Sauce",
+        "variants": [
+          "A. Tofu",
+          "B. Gebackenes Hähnchen",
+          "C. Rindfleisch",
+          "D. Knusprige Ente",
+          "E. Garnelen",
+          "F. Gegrillter Lachs"
+        ]
+      },
+      {
+        "name": "42. ERDNUSS",
+        "prices": [
+          "15,90€",
+          "16,90€",
+          "17,90€",
+          "18,90€",
+          "18,90€",
+          "19,90€"
+        ],
+        "description": "Cocos-Sauce, Erdnuss-Soße, Saisongemüse, Jasminreis",
+        "variants": [
+          "A. Tofu",
+          "B. Gebackenes Hähnchen",
+          "C. Rindfleisch",
+          "D. Knusprige Ente",
+          "E. Garnelen",
+          "F. Gegrillter Lachs"
+        ]
+      },
+      {
+        "name": "43. NAMA TERIYAKI STYLE",
+        "prices": [
+          "15,90€",
+          "16,90€",
+          "18,90€",
+          "19,90€",
+          "18,90€",
+          "19,90€"
+        ],
+        "description": "Saisongemüse, Pak Choi, Cherry-Tomaten, Jasminreis und Teriyaki-Sauce",
+        "variants": [
+          "A. Tofu",
+          "B. Gebackenes Hähnchen",
+          "C. Rindfleisch",
+          "D. Knusprige Ente",
+          "E. Garnelen",
+          "F. Gegrillter Lachs"
+        ]
+      },
+      {
+        "name": "44. BARBARIE ENTENBRUST",
+        "prices": [
+          "22,90€"
+        ],
+        "description": "Entenbrust vom Robata-Grill, Saisongemüse, Cherry-Tomaten, Pilze, Pak Choi, Teriyaki-Sauce",
+        "variants": []
+      }
+    ],
+    "media": [
+      {
+        "src": "original-06.webp",
+        "alt": "Udon mit Rindfleisch und Gemüse",
+        "width": 1024,
+        "height": 718,
+        "background": "#606261"
+      },
+      {
+        "src": "original-28.webp",
+        "alt": "Hauptgericht bei NAMA",
+        "width": 1058,
+        "height": 1066,
+        "background": "#51403b"
+      }
+    ]
+  },
+  {
+    "name": "Vietnamesische Spezialitäten",
+    "image": "original-07.webp",
+    "items": [
+      {
+        "name": "45. PHO NAMA",
+        "prices": [
+          "14,90€",
+          "16,90€"
+        ],
+        "description": "Große Reisbandnudelsuppe mit frischen Lauchzwiebeln, Koriander, scharfen Peperoni, Limetten und Fischsoße | A. Tofu | B. Rindfleisch",
+        "variants": [
+          "A. Tofu",
+          "B. Rindfleisch"
+        ]
+      },
+      {
+        "name": "46. BUN BO NAMA",
+        "prices": [
+          "14,90€",
+          "16,90€"
+        ],
+        "description": "Mit zartem Fleisch, Reisnudeln, Salat, Koriander in leckerer Knoblauch-Chilisoße, verfeinert mit gestampften Erdnüssen und gerösteten Zwiebeln | A. Tofu | B. Rindfleisch",
+        "variants": [
+          "A. Tofu",
+          "B. Rindfleisch"
+        ]
+      }
+    ],
+    "media": [
+      {
+        "src": "original-07.webp",
+        "alt": "Asiatische Suppe in einer dunklen Schale",
+        "width": 687,
+        "height": 1024,
+        "background": "#161412"
+      },
+      {
+        "src": "original-28.webp",
+        "alt": "Hauptgericht bei NAMA",
+        "width": 1058,
+        "height": 1066,
+        "background": "#51403b"
+      }
+    ]
+  },
+  {
+    "name": "Beilagen",
+    "image": "original-08.webp",
+    "items": [
+      {
+        "name": "Jasminreis",
+        "prices": [
+          "3,50€"
+        ],
+        "description": "",
+        "variants": []
+      },
+      {
+        "name": "Sushi-Reis",
+        "prices": [
+          "4,50€"
+        ],
+        "description": "",
+        "variants": []
+      },
+      {
+        "name": "Udon-Nudeln",
+        "prices": [
+          "4,50€"
+        ],
+        "description": "",
+        "variants": []
+      }
+    ],
+    "media": [
+      {
+        "src": "original-08.webp",
+        "alt": "Zubereitung von Sushi",
+        "width": 718,
+        "height": 1024,
+        "background": "#5d5854"
+      }
+    ]
+  },
+  {
+    "name": "Nigiri · 2 Stück",
+    "image": "original-17.webp",
+    "items": [
+      {
+        "name": "50. SAKE NIGIRI",
+        "prices": [
+          "4,50€"
+        ],
+        "description": "Lachs",
+        "variants": []
+      },
+      {
+        "name": "51. MAGURO NIGIRI",
+        "prices": [
+          "5,50€"
+        ],
+        "description": "Thunfisch",
+        "variants": []
+      },
+      {
+        "name": "52. EBI NIGIRI",
+        "prices": [
+          "4,50€"
+        ],
+        "description": "Gekochte Garnelen",
+        "variants": []
+      },
+      {
+        "name": "53. IKURA NIGIRI",
+        "prices": [
+          "6,50€"
+        ],
+        "description": "Kaviar, Frischkäse",
+        "variants": []
+      },
+      {
+        "name": "54. INARI NIGIRI",
+        "prices": [
+          "3,90€"
+        ],
+        "description": "Tofu-Tasche",
+        "variants": []
+      },
+      {
+        "name": "55. AVOCADO NIGIRI",
+        "prices": [
+          "3,90€"
+        ],
+        "description": "Avocado",
+        "variants": []
+      }
+    ],
+    "media": [
+      {
+        "src": "original-17.webp",
+        "alt": "Lachs-Nigiri",
+        "width": 1024,
+        "height": 617,
+        "background": "#fbf7e9"
+      },
+      {
+        "src": "nama-06.webp",
+        "alt": "Frisches Lachs- und Thunfisch-Sashimi",
+        "width": 685,
+        "height": 832,
+        "background": "#362a21"
+      }
+    ]
+  },
+  {
+    "name": "Aburi Nigiri · 2 Stück",
+    "image": "original-09.webp",
+    "items": [
+      {
+        "name": "56. SAKE",
+        "prices": [
+          "6,50€"
+        ],
+        "description": "Flambierter Lachs, Topping on top",
+        "variants": []
+      },
+      {
+        "name": "57. MAGURO",
+        "prices": [
+          "6,90€"
+        ],
+        "description": "Flambierter Thunfisch, Topping on top",
+        "variants": []
+      },
+      {
+        "name": "58. UNAGI",
+        "prices": [
+          "5,90€"
+        ],
+        "description": "Flambierter Aal, Spargel, Topping on top",
+        "variants": []
+      },
+      {
+        "name": "59. HOTATEGAI",
+        "prices": [
+          "6,90€"
+        ],
+        "description": "Jakobsmuschel flambiert, Topping on top",
+        "variants": []
+      },
+      {
+        "name": "60. BEEF NAMA",
+        "prices": [
+          "6,90€"
+        ],
+        "description": "Rinderfilet flambiert, Trüffelöl",
+        "variants": []
+      }
+    ],
+    "media": [
+      {
+        "src": "original-09.webp",
+        "alt": "Japanische Handwerkskunst auf dem Teller",
+        "width": 1008,
+        "height": 1024,
+        "background": "#857365"
+      },
+      {
+        "src": "nama-05.webp",
+        "alt": "Lachs-Sushi mit feinen Toppings",
+        "width": 684,
+        "height": 843,
+        "background": "#492217"
+      }
+    ]
+  },
+  {
+    "name": "Maki · 6 Stück",
+    "image": "original-11.webp",
+    "items": [
+      {
+        "name": "61. SAKE MAKI",
+        "prices": [
+          "5,50€"
+        ],
+        "description": "Lachs",
+        "variants": []
+      },
+      {
+        "name": "62. SAKE AVO",
+        "prices": [
+          "5,90€"
+        ],
+        "description": "Lachs, Avocado",
+        "variants": []
+      },
+      {
+        "name": "63. TEKA MAKI",
+        "prices": [
+          "5,50€"
+        ],
+        "description": "Thunfisch",
+        "variants": []
+      },
+      {
+        "name": "64. TEKA AVO",
+        "prices": [
+          "5,90€"
+        ],
+        "description": "Thunfisch, Avocado",
+        "variants": []
+      },
+      {
+        "name": "65. UNAGI MAKI",
+        "prices": [
+          "6,50€"
+        ],
+        "description": "Aal, Gurke",
+        "variants": []
+      },
+      {
+        "name": "66. EBI AVO",
+        "prices": [
+          "5,50€"
+        ],
+        "description": "Gekochte Garnelen, Avocado",
+        "variants": []
+      },
+      {
+        "name": "67. CALI MAKI",
+        "prices": [
+          "3,90€"
+        ],
+        "description": "Surimi, Avocado",
+        "variants": []
+      },
+      {
+        "name": "68. AVOCADO MAKI",
+        "prices": [
+          "3,50€"
+        ],
+        "description": "Avocado, Sesam",
+        "variants": []
+      },
+      {
+        "name": "69. KAPA MAKI",
+        "prices": [
+          "3,50€"
+        ],
+        "description": "Gurke, Sesam",
+        "variants": []
+      },
+      {
+        "name": "70. MANGO MAKI",
+        "prices": [
+          "3,50€"
+        ],
+        "description": "Mango, Frischkäse",
+        "variants": []
+      },
+      {
+        "name": "71. SPARGEL MAKI",
+        "prices": [
+          "4,50€"
+        ],
+        "description": "Grüner Spargel Tempura, Frischkäse, Sesam",
+        "variants": []
+      },
+      {
+        "name": "72. EBI TEMPURA MAKI",
+        "prices": [
+          "6,50€"
+        ],
+        "description": "Tempura-Garnelen",
+        "variants": []
+      }
+    ],
+    "media": [
+      {
+        "src": "original-11.webp",
+        "alt": "Maki auf einem Keramikteller",
+        "width": 1024,
+        "height": 590,
+        "background": "#faf7e8"
+      }
+    ]
+  },
+  {
+    "name": "Inside-Out · 8 Stück",
+    "image": "original-13.webp",
+    "items": [
+      {
+        "name": "80. SAKE ROLL",
+        "prices": [
+          "9,50€"
+        ],
+        "description": "Lachs, Avocado, Gurke, Käse, Sesam, Tobiko",
+        "variants": []
+      },
+      {
+        "name": "81. TUNA DRIVE",
+        "prices": [
+          "9,90€"
+        ],
+        "description": "Thunfisch, Avocado, Gurke, Käse, Sesam, Tobiko",
+        "variants": []
+      },
+      {
+        "name": "82. EBI TEMPURA",
+        "prices": [
+          "9,50€"
+        ],
+        "description": "Tempura-Garnelen, Avocado, Gurke, Käse, Sesam",
+        "variants": []
+      },
+      {
+        "name": "83. CALIFORNIA",
+        "prices": [
+          "8,50€"
+        ],
+        "description": "Surimi, Avocado, Gurke, Käse, Sesam, Tobiko",
+        "variants": []
+      },
+      {
+        "name": "84. VEGETARIER",
+        "prices": [
+          "7,90€"
+        ],
+        "description": "Avocado, Gurke, Mango, Spargel, Sesam",
+        "variants": []
+      },
+      {
+        "name": "85. CHICKEN ROLL",
+        "prices": [
+          "8,50€"
+        ],
+        "description": "Knuspriges Hähnchen, Gurke, Sesam",
+        "variants": []
+      }
+    ],
+    "media": [
+      {
+        "src": "original-13.webp",
+        "alt": "Inside-Out-Rollen",
+        "width": 1024,
+        "height": 624,
+        "background": "#f9f7e8"
+      },
+      {
+        "src": "nama-02.webp",
+        "alt": "Sushi-Rollen auf einer blauen Servierplatte",
+        "width": 685,
+        "height": 835,
+        "background": "#575248"
+      }
+    ]
+  },
+  {
+    "name": "Special Rolls · 8 Stück",
+    "image": "original-14.webp",
+    "items": [
+      {
+        "name": "90. SALMON QUEEN",
+        "prices": [
+          "14,90€"
+        ],
+        "description": "Lachs, Avocado, Gurke, Frischkäse, Sesam, Tobiko, umwickelt mit Lachs, Unagi-Chili-Mayo-Soße",
+        "variants": []
+      },
+      {
+        "name": "91. TUNA QUEEN",
+        "prices": [
+          "15,90€"
+        ],
+        "description": "Thunfisch, Avocado, Gurke, Frischkäse, Sesam, Tobiko, umwickelt mit Thunfisch, Unagi-Chili-Mayo-Soße",
+        "variants": []
+      },
+      {
+        "name": "92. BLACK DRAGON",
+        "prices": [
+          "15,90€"
+        ],
+        "description": "Ebi Tempura, Avocado, Gurke, Frischkäse, Sesam, Tobiko, umwickelt mit Aal, Unagi-Soße",
+        "variants": []
+      },
+      {
+        "name": "93. SHIBUYA ROLL",
+        "prices": [
+          "16,90€"
+        ],
+        "description": "Ebi Tempura, Avocado, Mango, Frischkäse, Sesam, Tobiko, umwickelt mit flambiertem Lachs, Unagi-Chili-Mayo",
+        "variants": []
+      },
+      {
+        "name": "94. RAINBOW ROLL",
+        "prices": [
+          "14,90€"
+        ],
+        "description": "Surimi, Avocado, Gurke, Frischkäse, Tobiko, umwickelt mit gemischtem Fisch, Topping on top",
+        "variants": []
+      },
+      {
+        "name": "95. MANGO GOLD",
+        "prices": [
+          "12,90€"
+        ],
+        "description": "Mango, Avocado, Gurke, Frischkäse, umwickelt mit Mango, Mango-Soße · Vegetarisch",
+        "variants": []
+      },
+      {
+        "name": "96. GREEN AVOCADO",
+        "prices": [
+          "12,90€"
+        ],
+        "description": "Spargel, Avocado, Gurke, Frischkäse, Sesam, umwickelt mit Avocado und Mango-Soße · Vegetarisch",
+        "variants": []
+      },
+      {
+        "name": "97. BEEF ROLL",
+        "prices": [
+          "17,90€"
+        ],
+        "description": "Ebi Tempura, Avocado, Spargel, Philadelphia, umwickelt mit Rinderfilet, Nama-Soße",
+        "variants": []
+      },
+      {
+        "name": "98. TOKIO ROLL",
+        "prices": [
+          "16,90€"
+        ],
+        "description": "Ebi Tempura, Avocado, Gurke, Mango, Frischkäse, umwickelt mit Lachstatar und Nama-Soße",
+        "variants": []
+      },
+      {
+        "name": "99. SPEZIAL THUNFISCH",
+        "prices": [
+          "15,90€"
+        ],
+        "description": "Thunfisch-Tatar, Avocado, Mango, Gurke, umwickelt mit Avocado, Topping on top",
+        "variants": []
+      },
+      {
+        "name": "100. URAMAKI ROLL",
+        "prices": [
+          "14,90€"
+        ],
+        "description": "Gemischter Fisch, Mango, Avocado, Gurke, Frischkäse, Tobiko",
+        "variants": []
+      },
+      {
+        "name": "101. BUDA ROLL",
+        "prices": [
+          "14,90€"
+        ],
+        "description": "Avocado, Gurke, Spargel, Mango, Käse, Sesam, umwickelt mit Avocado · Vegetarisch",
+        "variants": []
+      }
+    ],
+    "media": [
+      {
+        "src": "original-14.webp",
+        "alt": "Special Rolls auf einem blauen Teller",
+        "width": 1024,
+        "height": 709,
+        "background": "#a8774c"
+      },
+      {
+        "src": "nama-11.webp",
+        "alt": "Sushi auf einer Holzbrücke",
+        "width": 1200,
+        "height": 1600,
+        "background": "#a27d46"
+      }
+    ]
+  },
+  {
+    "name": "Sashimi · 6 Stück",
+    "image": "original-16.webp",
+    "items": [
+      {
+        "name": "S1. LACHS",
+        "prices": [
+          "11,90€"
+        ],
+        "description": "Lachs",
+        "variants": []
+      },
+      {
+        "name": "S2. MAGURO",
+        "prices": [
+          "12,90€"
+        ],
+        "description": "Thunfisch",
+        "variants": []
+      },
+      {
+        "name": "S3. NAMA MIX",
+        "prices": [
+          "19,90€"
+        ],
+        "description": "Fische mixen",
+        "variants": []
+      }
+    ],
+    "media": [
+      {
+        "src": "original-16.webp",
+        "alt": "Lachs-Sashimi auf Eis",
+        "width": 728,
+        "height": 1024,
+        "background": "#545248"
+      },
+      {
+        "src": "original-15.webp",
+        "alt": "Sushi kunstvoll angerichtet",
+        "width": 1024,
+        "height": 547,
+        "background": "#f8f8ea"
+      }
+    ]
+  },
+  {
+    "name": "Tempura Rolls",
+    "image": "original-18.webp",
+    "items": [
+      {
+        "name": "110. SAKE CRUNCHY",
+        "prices": [
+          "7,90€"
+        ],
+        "description": "Lachs, Avocado, Gurka, Philadelphia, Unagi-Chill-Mayo · Big Crunchy · 6 Stück",
+        "variants": []
+      },
+      {
+        "name": "111. CHICKEN CRUNCHY",
+        "prices": [
+          "7,90€"
+        ],
+        "description": "Hühnerfleisch, Avocado, Gurke, Philadelphia, Unagi-Chili-Mayo · Big Crunchy · 6 Stück",
+        "variants": []
+      },
+      {
+        "name": "112. BUDA CRUNCHY",
+        "prices": [
+          "7,90€"
+        ],
+        "description": "Spargel, Avocado, Gurke, Süfßkartoffel, Unagi-Chili-Mayo · Big Crunchy · 6 Stück",
+        "variants": []
+      },
+      {
+        "name": "113. SAKE MINI CRUNCHY",
+        "prices": [
+          "6,50€"
+        ],
+        "description": "Lachs, Philadelphia · Mini Crunchy · 8 Stück",
+        "variants": []
+      },
+      {
+        "name": "114. EBI AVO CRUNCHY",
+        "prices": [
+          "6,50€"
+        ],
+        "description": "Garnelen, Avocado · Mini Crunchy · 8 Stück",
+        "variants": []
+      },
+      {
+        "name": "115. KAPA AVO CRUNCHY",
+        "prices": [
+          "6,50€"
+        ],
+        "description": "Avocado, Gurke · Mini Crunchy · 8 Stück",
+        "variants": []
+      }
+    ],
+    "media": [
+      {
+        "src": "original-18.webp",
+        "alt": "Knusprige Sushi-Rollen",
+        "width": 837,
+        "height": 1024,
+        "background": "#746856"
+      },
+      {
+        "src": "original-19.webp",
+        "alt": "Tempura-Rollen mit Avocado",
+        "width": 1024,
+        "height": 529,
+        "background": "#fcf6ea"
+      }
+    ]
+  },
+  {
+    "name": "Sushi-Menüs",
+    "image": "original-20.webp",
+    "items": [
+      {
+        "name": "BENTO 1. VEGETARIAN LOVE",
+        "prices": [
+          "16,90€"
+        ],
+        "description": "6 Stk. Maki | 8 Stk. I.O. | 8 Stk. Veggie Mini Crunchy",
+        "variants": []
+      },
+      {
+        "name": "BENTO 2. BUDDHA LOVE",
+        "prices": [
+          "18,90€"
+        ],
+        "description": "6 Stk. Maki | 8 Stk. Spezial Roll | 2 Stk. Nigiri",
+        "variants": []
+      },
+      {
+        "name": "BENTO 3. SALMON LOVE",
+        "prices": [
+          "23,90€"
+        ],
+        "description": "6 Stk. Maki | 8 Stk. Sake I.O. | 8 Stk. Lachs Mini Crunchy | 2 Stk. Lachs Nigiri",
+        "variants": []
+      },
+      {
+        "name": "BENTO 4. TUNA LOVE",
+        "prices": [
+          "25,90€"
+        ],
+        "description": "6 Stk. Maki | 8 Stk. Tuna Drive | 8 Stk. Lachs Mini Crunchy | 2 Stk. Maguro Nigiri",
+        "variants": []
+      },
+      {
+        "name": "BENTO 5. DELUXE",
+        "prices": [
+          "31,90€"
+        ],
+        "description": "2 Stk. Nigiri | 6 Stk. Maki | 8 Stk. Spezial Roll | 6 Stk. Big Crunchy",
+        "variants": []
+      },
+      {
+        "name": "BENTO 6. MAMA FÜR 2 PERSONEN",
+        "prices": [
+          "55,90€"
+        ],
+        "description": "4 Stk. Nigiri | 12 Stk. Maki | 8 Stk. I.O. | 16 Stk. Spezial Roll | 6 Stk. Big Crunchy | 4 Stk. Lachs Sashimi",
+        "variants": []
+      },
+      {
+        "name": "BENTO 7. MAMA FÜR 4 PERSONEN / FAMILY",
+        "prices": [
+          "110,90€"
+        ],
+        "description": "8 Stk. Nigiri | 18 Stk. Maki | 24 Stk. I.O. | 24 Stk. Spezial Roll | 6 Stk. Big Crunchy | 8 Stk. Mini Crunchy | 6 Stk. Lachs Sashimi",
+        "variants": []
+      },
+      {
+        "name": "BENTO 8. NAMA FISHET FUSION SUSHI",
+        "prices": [
+          "29,90€"
+        ],
+        "description": "Sushi-Set – Empfehlung für 1 Person",
+        "variants": []
+      }
+    ],
+    "media": [
+      {
+        "src": "original-20.webp",
+        "alt": "Sushi-Menü zum Teilen",
+        "width": 1024,
+        "height": 572,
+        "background": "#969285"
+      },
+      {
+        "src": "nama-03.webp",
+        "alt": "Sushi-Auswahl mit Lachs und Thunfisch",
+        "width": 683,
+        "height": 839,
+        "background": "#483528"
+      }
+    ]
+  },
+  {
+    "name": "Nachtisch",
+    "image": "original-21.webp",
+    "items": [
+      {
+        "name": "N1. MOCHI EIS",
+        "prices": [
+          "5,90€"
+        ],
+        "description": "Reiskuchen mit roter Bohnen Füllung",
+        "variants": []
+      },
+      {
+        "name": "N2. CHUOI CHIEN",
+        "prices": [
+          "5,90€"
+        ],
+        "description": "Mit 1 Kugel Eis und Honig",
+        "variants": []
+      }
+    ],
+    "media": [
+      {
+        "src": "original-21.webp",
+        "alt": "Mochi-Eis",
+        "width": 728,
+        "height": 1024,
+        "background": "#493e3f"
+      }
+    ]
+  },
+  {
+    "name": "Softdrinks & Säfte",
+    "image": "original-22.webp",
+    "drinks": true,
+    "items": [
+      {
+        "name": "COCA COLA",
+        "prices": [
+          "3,90€"
+        ],
+        "description": "0,33 l",
+        "variants": []
+      },
+      {
+        "name": "COCA COLA ZERO",
+        "prices": [
+          "3,90€"
+        ],
+        "description": "0,33 l",
+        "variants": []
+      },
+      {
+        "name": "SPRITE",
+        "prices": [
+          "3,90€"
+        ],
+        "description": "0,33 l",
+        "variants": []
+      },
+      {
+        "name": "MEZZO MIX",
+        "prices": [
+          "3,90€"
+        ],
+        "description": "0,33 l",
+        "variants": []
+      },
+      {
+        "name": "FANTA",
+        "prices": [
+          "3,90€"
+        ],
+        "description": "0,33 l",
+        "variants": []
+      },
+      {
+        "name": "SCHWEPPES BITTER LEMON",
+        "prices": [
+          "2,90€"
+        ],
+        "description": "0,2 l",
+        "variants": []
+      },
+      {
+        "name": "SCHWEPPES GINGER ALE",
+        "prices": [
+          "2,90€"
+        ],
+        "description": "0,2 l",
+        "variants": []
+      },
+      {
+        "name": "SCHWEPPES TONIC WATER",
+        "prices": [
+          "2,90€"
+        ],
+        "description": "0,2 l",
+        "variants": []
+      },
+      {
+        "name": "APFELSAFT NATURTRÜB",
+        "prices": [
+          "3,20€"
+        ],
+        "description": "0,2 l",
+        "variants": []
+      },
+      {
+        "name": "JOHANNISBEERSAFT NATURTRÜB",
+        "prices": [
+          "3,20€"
+        ],
+        "description": "",
+        "variants": []
+      },
+      {
+        "name": "ANANASSAFT",
+        "prices": [
+          "3,20€"
+        ],
+        "description": "",
+        "variants": []
+      },
+      {
+        "name": "MANGOSAFT",
+        "prices": [
+          "3,20€"
+        ],
+        "description": "",
+        "variants": []
+      },
+      {
+        "name": "MARACUJASAFT",
+        "prices": [
+          "3,20€"
+        ],
+        "description": "",
+        "variants": []
+      },
+      {
+        "name": "LITSCHISAFT",
+        "prices": [
+          "3,20€"
+        ],
+        "description": "",
+        "variants": []
+      },
+      {
+        "name": "ORANGENSAFT",
+        "prices": [
+          "3,20€"
+        ],
+        "description": "",
+        "variants": []
+      },
+      {
+        "name": "WASSER STILL / SPRUDEL",
+        "prices": [
+          "3,50€",
+          "6,50€"
+        ],
+        "description": "",
+        "variants": [
+          "0,25 l",
+          "0,75 l"
+        ]
+      }
+    ],
+    "media": [
+      {
+        "src": "original-22.webp",
+        "alt": "Softdrink mit Eis",
+        "width": 751,
+        "height": 1024,
+        "background": "#625855"
+      }
+    ]
+  },
+  {
+    "name": "Kaffee & Tee",
+    "image": "original-23.webp",
+    "drinks": true,
+    "items": [
+      {
+        "name": "CAPPUCCINO",
+        "prices": [
+          "4,50€"
+        ],
+        "description": "",
+        "variants": []
+      },
+      {
+        "name": "ESPRESSO",
+        "prices": [
+          "3,20€"
+        ],
+        "description": "",
+        "variants": []
+      },
+      {
+        "name": "LATTE MACCHIATO",
+        "prices": [
+          "4,50€"
+        ],
+        "description": "",
+        "variants": []
+      },
+      {
+        "name": "VIETNAMESISCHER KAFFEE",
+        "prices": [
+          "4,50€"
+        ],
+        "description": "Langsam tropfender vietnamesischer Kaffee, gefiltert durch einen speziellen Metallfilter in ein Glas mit Kondensmilch",
+        "variants": []
+      },
+      {
+        "name": "INGWERTEE",
+        "prices": [
+          "4,90€"
+        ],
+        "description": "Frischer Ingwer mit getrockneter Orange, Minze und Agavendicksaft",
+        "variants": []
+      },
+      {
+        "name": "ZITRONENGRAS-TEE",
+        "prices": [
+          "4,90€"
+        ],
+        "description": "Heißer Zitronengras-Tee mit Limettensaft, Kaffir-Limettenblatt und Agavendicksaft",
+        "variants": []
+      },
+      {
+        "name": "JASMINTEE",
+        "prices": [
+          "4,90€"
+        ],
+        "description": "Jasmintee mit jungen Bio-Jasminblüten, Gojibeeren und Süßholz",
+        "variants": []
+      }
+    ],
+    "media": [
+      {
+        "src": "original-23.webp",
+        "alt": "Kaffee frisch zubereitet",
+        "width": 718,
+        "height": 1024,
+        "background": "#262322"
+      }
+    ]
+  },
+  {
+    "name": "Hausgemachte Getränke",
+    "image": "original-24.webp",
+    "drinks": true,
+    "items": [
+      {
+        "name": "EISIGER ZITRONEN-LEMONGRAS",
+        "prices": [
+          "5,90€"
+        ],
+        "description": "Gebrühter Zitronengras-Tee mit Limettensaft, Soda, Minze und Eiswürfeln",
+        "variants": []
+      },
+      {
+        "name": "EISIGER LIMETTEN",
+        "prices": [
+          "5,90€"
+        ],
+        "description": "Gepresster Limettensaft, Soda und Eiswürfeln",
+        "variants": []
+      },
+      {
+        "name": "ERDBEERLIMONADE",
+        "prices": [
+          "5,90€"
+        ],
+        "description": "Frische Himbeerlimonade mit Mangosaft, Chiasamen und Eiswürfeln.",
+        "variants": []
+      },
+      {
+        "name": "ALOE VERA",
+        "prices": [
+          "5,90€"
+        ],
+        "description": "Aloe Vera, Chiasamen, Soda und Eiswürfeln.",
+        "variants": []
+      }
+    ],
+    "media": [
+      {
+        "src": "original-24.webp",
+        "alt": "Hausgemachte Getränke",
+        "width": 741,
+        "height": 1024,
+        "background": "#79441b"
+      }
+    ]
+  },
+  {
+    "name": "Aperitif, Digestif & Bier",
+    "image": "original-25.webp",
+    "drinks": true,
+    "items": [
+      {
+        "name": "APEROL SPRITZ",
+        "prices": [
+          "7,90€"
+        ],
+        "description": "Aperol, Prosecco, Grapefruit, Soda",
+        "variants": []
+      },
+      {
+        "name": "RED HUGO",
+        "prices": [
+          "7,90€"
+        ],
+        "description": "Holunderblütensirup, Prosecco, Himbeeren, Soda, frische Minze",
+        "variants": []
+      },
+      {
+        "name": "NEP MOI",
+        "prices": [
+          "5,90€"
+        ],
+        "description": "Viet. Klebreisschnaps 30% vol. / 2 cl",
+        "variants": []
+      },
+      {
+        "name": "LUA MOI",
+        "prices": [
+          "5,90€"
+        ],
+        "description": "Viet. Reisschnaps 40% vol. / 2 cl",
+        "variants": []
+      },
+      {
+        "name": "SAKE WEIN",
+        "prices": [
+          "5,90€"
+        ],
+        "description": "14,5% vol. / 2 cl",
+        "variants": []
+      },
+      {
+        "name": "KROMBACHER PILS",
+        "prices": [
+          "4,50€",
+          "5,50€"
+        ],
+        "description": "Fassbier",
+        "variants": [
+          "0,25 l",
+          "0,4 l"
+        ]
+      },
+      {
+        "name": "KIRIN BIER",
+        "prices": [
+          "4,90€"
+        ],
+        "description": "Flaschenbier · 0,3 l",
+        "variants": []
+      },
+      {
+        "name": "ASAHI BIER",
+        "prices": [
+          "4,90€"
+        ],
+        "description": "Flaschenbier · 0,3 l",
+        "variants": []
+      },
+      {
+        "name": "ERDINGER WEISSBIER",
+        "prices": [
+          "6,50€"
+        ],
+        "description": "Flaschenbier · 0,5 l",
+        "variants": []
+      },
+      {
+        "name": "KROMBACHER WEIZEN ALKOHOLFREI",
+        "prices": [
+          "6,50€"
+        ],
+        "description": "Flaschenbier · 0,5 l",
+        "variants": []
+      }
+    ],
+    "media": [
+      {
+        "src": "original-25.webp",
+        "alt": "Frisch gezapftes Bier",
+        "width": 718,
+        "height": 1024,
+        "background": "#53504a"
+      },
+      {
+        "src": "original-27.webp",
+        "alt": "Rosé und Aperitif",
+        "width": 718,
+        "height": 1024,
+        "background": "#a0a4a0"
+      }
+    ]
+  },
+  {
+    "name": "Weine",
+    "image": "original-26.webp",
+    "drinks": true,
+    "items": [
+      {
+        "name": "JOSE DE ZARZAS",
+        "prices": [
+          "6,90€",
+          "21,90€"
+        ],
+        "description": "Rotwein · Der Rotwein von Jose de Zarzas ist ein trockener Reserva aus 100% Tempranillo-Trauben.",
+        "variants": [
+          "0,2 l",
+          "0,75 l"
+        ]
+      },
+      {
+        "name": "PRIMITIVO",
+        "prices": [
+          "6,90€",
+          "21,90€"
+        ],
+        "description": "Rotwein · Ein vollmundiger Rotwein mit dunklen, marmeladigen Fruchtaromen wie Kirschen, Brombeeren und Heidelbeeren",
+        "variants": [
+          "0,2 l",
+          "0,75 l"
+        ]
+      },
+      {
+        "name": "CHÂTEAU MAURIAC",
+        "prices": [
+          "7,50€",
+          "22,90€"
+        ],
+        "description": "Rotwein · Kraftvoller, strukturierter Wein mit Duft nach Waldfrüchten, Gewürzen und eleganten Röstnoten.",
+        "variants": [
+          "0,2 l",
+          "0,75 l"
+        ]
+      },
+      {
+        "name": "WEISSBURGUNDER",
+        "prices": [
+          "6,90€",
+          "21,90€"
+        ],
+        "description": "Weißwein · Feinste Quittennoten, erfreut Nase und Gaumen, einprägsame Fruchtigkeit und zarter Körper, ein erfrischender Sommerwein",
+        "variants": [
+          "0,2 l",
+          "0,75 l"
+        ]
+      },
+      {
+        "name": "CLAUS JACOB",
+        "prices": [
+          "7,20€",
+          "22,90€"
+        ],
+        "description": "Weißwein · Für jeden Anlass – bei uns finden Sie die richtigen Spirituosen, edle Weine und erlesene Sekte",
+        "variants": [
+          "0,2 l",
+          "0,75 l"
+        ]
+      },
+      {
+        "name": "THOMAS RATH",
+        "prices": [
+          "6,90€",
+          "21,90€"
+        ],
+        "description": "Weißwein · Mit einem feinen Muskat-Bukett und einer hervorragenden Milde. Serviert wird der Weißwein bevorzugt zu saftigem Schweinebraten, Gemüsegerichten und würzigem Ragout.",
+        "variants": [
+          "0,2 l",
+          "0,75 l"
+        ]
+      },
+      {
+        "name": "ROSÉ-SCHORLE SÜDAFRIKA / CAPE BRIDGE PINOTAGE ROSÉ (TROCKEN)",
+        "prices": [
+          "6,90€",
+          "23,90€"
+        ],
+        "description": "Der Wein strahlt in einem lachsfarbenen Roséton. Er hat Aromen von Erdbeeren und Anklänge von Himbeeren. Ein fruchtiger Rosé mit frischer, angenehmer Säure.",
+        "variants": [
+          "0,2 l",
+          "0,75 l"
+        ]
+      }
+    ],
+    "media": [
+      {
+        "src": "original-26.webp",
+        "alt": "Weine",
+        "width": 718,
+        "height": 1024,
+        "background": "#16130f"
+      }
+    ]
+  }
+]

@@ -1,0 +1,296 @@
+[
+  {
+    "src": "nama-01.webp",
+    "alt": "Sushi-Platte mit Nigiri und Maki",
+    "width": 681,
+    "height": 815,
+    "background": "#63361f"
+  },
+  {
+    "src": "nama-02.webp",
+    "alt": "Sushi-Rollen auf einer blauen Servierplatte",
+    "width": 685,
+    "height": 835,
+    "background": "#575248"
+  },
+  {
+    "src": "nama-03.webp",
+    "alt": "Sushi-Auswahl mit Lachs und Thunfisch",
+    "width": 683,
+    "height": 839,
+    "background": "#483528"
+  },
+  {
+    "src": "nama-04.webp",
+    "alt": "Kunstvoll angerichtete Sushi-Rollen",
+    "width": 679,
+    "height": 847,
+    "background": "#90715a"
+  },
+  {
+    "src": "nama-05.webp",
+    "alt": "Lachs-Sushi mit feinen Toppings",
+    "width": 684,
+    "height": 843,
+    "background": "#492217"
+  },
+  {
+    "src": "nama-06.webp",
+    "alt": "Frisches Lachs- und Thunfisch-Sashimi",
+    "width": 685,
+    "height": 832,
+    "background": "#362a21"
+  },
+  {
+    "src": "nama-07.webp",
+    "alt": "Sushi im Detail",
+    "width": 610,
+    "height": 841,
+    "background": "#180000"
+  },
+  {
+    "src": "nama-08.webp",
+    "alt": "Tatar mit Avocado",
+    "width": 683,
+    "height": 836,
+    "background": "#6c6c69"
+  },
+  {
+    "src": "nama-09.webp",
+    "alt": "Japanische Gyoza",
+    "width": 1200,
+    "height": 1600,
+    "background": "#837b72"
+  },
+  {
+    "src": "nama-10.webp",
+    "alt": "Sushi-Auswahl zum Teilen",
+    "width": 1200,
+    "height": 1600,
+    "background": "#b38d70"
+  },
+  {
+    "src": "nama-11.webp",
+    "alt": "Sushi auf einer Holzbrücke",
+    "width": 1200,
+    "height": 1600,
+    "background": "#a27d46"
+  },
+  {
+    "src": "nama-12.webp",
+    "alt": "Sushi mit knusprigem Topping",
+    "width": 1066,
+    "height": 1600,
+    "background": "#3a4257"
+  },
+  {
+    "src": "original-01.webp",
+    "alt": "Sushi auf einer Holzbrücke",
+    "width": 1290,
+    "height": 1728,
+    "background": "#7c6c58"
+  },
+  {
+    "src": "original-02.webp",
+    "alt": "Einblicke bei NAMA",
+    "width": 683,
+    "height": 894,
+    "background": "#4c2f2a"
+  },
+  {
+    "src": "original-03.webp",
+    "alt": "Gyoza mit Dip",
+    "width": 1024,
+    "height": 535,
+    "background": "#b98a60"
+  },
+  {
+    "src": "original-04.webp",
+    "alt": "Asiatischer Salat mit frischen Kräutern",
+    "width": 941,
+    "height": 858,
+    "background": "#5a4c3a"
+  },
+  {
+    "src": "original-05.webp",
+    "alt": "Bowl mit Lachs und Gemüse",
+    "width": 921,
+    "height": 745,
+    "background": "#423222"
+  },
+  {
+    "src": "original-06.webp",
+    "alt": "Udon mit Rindfleisch und Gemüse",
+    "width": 1024,
+    "height": 718,
+    "background": "#606261"
+  },
+  {
+    "src": "original-07.webp",
+    "alt": "Asiatische Suppe in einer dunklen Schale",
+    "width": 687,
+    "height": 1024,
+    "background": "#161412"
+  },
+  {
+    "src": "original-08.webp",
+    "alt": "Zubereitung von Sushi",
+    "width": 718,
+    "height": 1024,
+    "background": "#5d5854"
+  },
+  {
+    "src": "original-09.webp",
+    "alt": "Japanische Handwerkskunst auf dem Teller",
+    "width": 1008,
+    "height": 1024,
+    "background": "#857365"
+  },
+  {
+    "src": "original-11.webp",
+    "alt": "Maki auf einem Keramikteller",
+    "width": 1024,
+    "height": 590,
+    "background": "#faf7e8"
+  },
+  {
+    "src": "original-12.webp",
+    "alt": "Sushi mit feinen Toppings",
+    "width": 696,
+    "height": 1024,
+    "background": "#82665c"
+  },
+  {
+    "src": "original-13.webp",
+    "alt": "Inside-Out-Rollen",
+    "width": 1024,
+    "height": 624,
+    "background": "#f9f7e8"
+  },
+  {
+    "src": "original-14.webp",
+    "alt": "Special Rolls auf einem blauen Teller",
+    "width": 1024,
+    "height": 709,
+    "background": "#a8774c"
+  },
+  {
+    "src": "original-15.webp",
+    "alt": "Sushi kunstvoll angerichtet",
+    "width": 1024,
+    "height": 547,
+    "background": "#f8f8ea"
+  },
+  {
+    "src": "original-16.webp",
+    "alt": "Lachs-Sashimi auf Eis",
+    "width": 728,
+    "height": 1024,
+    "background": "#545248"
+  },
+  {
+    "src": "original-17.webp",
+    "alt": "Lachs-Nigiri",
+    "width": 1024,
+    "height": 617,
+    "background": "#fbf7e9"
+  },
+  {
+    "src": "original-18.webp",
+    "alt": "Knusprige Sushi-Rollen",
+    "width": 837,
+    "height": 1024,
+    "background": "#746856"
+  },
+  {
+    "src": "original-19.webp",
+    "alt": "Tempura-Rollen mit Avocado",
+    "width": 1024,
+    "height": 529,
+    "background": "#fcf6ea"
+  },
+  {
+    "src": "original-20.webp",
+    "alt": "Sushi-Menü zum Teilen",
+    "width": 1024,
+    "height": 572,
+    "background": "#969285"
+  },
+  {
+    "src": "original-21.webp",
+    "alt": "Mochi-Eis",
+    "width": 728,
+    "height": 1024,
+    "background": "#493e3f"
+  },
+  {
+    "src": "original-22.webp",
+    "alt": "Softdrink mit Eis",
+    "width": 751,
+    "height": 1024,
+    "background": "#625855"
+  },
+  {
+    "src": "original-23.webp",
+    "alt": "Kaffee frisch zubereitet",
+    "width": 718,
+    "height": 1024,
+    "background": "#262322"
+  },
+  {
+    "src": "original-24.webp",
+    "alt": "Hausgemachte Getränke",
+    "width": 741,
+    "height": 1024,
+    "background": "#79441b"
+  },
+  {
+    "src": "original-25.webp",
+    "alt": "Frisch gezapftes Bier",
+    "width": 718,
+    "height": 1024,
+    "background": "#53504a"
+  },
+  {
+    "src": "original-26.webp",
+    "alt": "Weine",
+    "width": 718,
+    "height": 1024,
+    "background": "#16130f"
+  },
+  {
+    "src": "original-27.webp",
+    "alt": "Rosé und Aperitif",
+    "width": 718,
+    "height": 1024,
+    "background": "#a0a4a0"
+  },
+  {
+    "src": "original-28.webp",
+    "alt": "Hauptgericht bei NAMA",
+    "width": 1058,
+    "height": 1066,
+    "background": "#51403b"
+  },
+  {
+    "src": "original-29.webp",
+    "alt": "Frisch angerichtete Bowl",
+    "width": 1050,
+    "height": 1040,
+    "background": "#442c1e"
+  },
+  {
+    "src": "original-30.webp",
+    "alt": "Sushi-Auswahl auf Schiefer",
+    "width": 1046,
+    "height": 1073,
+    "background": "#6d5234"
+  },
+  {
+    "src": "original-31.webp",
+    "alt": "Sushi und ein gedeckter Tisch",
+    "width": 1505,
+    "height": 1033,
+    "background": "#1b0c08"
+  }
+]
