@@ -6,7 +6,7 @@
 
 ## Xác thực tên miền
 
-1. Trong Resend → Domains → Add Domain, thêm `mail.nama-asianfusion.com` và chọn vùng gần người nhận (nhà hàng ở Đức).
+1. Trong Resend → Domains → Add Domain, thêm tên miền gửi. Hiện dùng `nama-sushi.de` (đã Verified, vùng Tokyo).
 2. Gửi danh sách DNS Resend hiển thị cho người đang quản lý tên miền. Họ thêm đúng tên, loại và giá trị bản ghi. Không tự đoán các giá trị DKIM/SPF và không xóa bản ghi mail hiện có.
 3. Khi tên miền có trạng thái Verified, tạo API key có quyền Sending access, giới hạn đúng tên miền đó.
 4. API key chỉ được nhập vào secret của máy chủ, không đưa vào `dist/booking-config.json`, mã trình duyệt hoặc chat.
@@ -39,3 +39,15 @@ Form giữ nguyên dữ liệu khi lỗi, chỉ thông báo thành công khi API
 Trước khi chuyển, cập nhật mục dịch vụ gửi form trong `datenschutz.html` theo dịch vụ thực sự sử dụng và thiết lập xử lý dữ liệu của đơn vị vận hành. Hiện nội dung pháp lý vẫn mô tả FormSubmit, phù hợp với dịch vụ đang hoạt động.
 
 Tài liệu: [Resend domain](https://resend.com/docs/add-a-domain), [Resend test restriction](https://resend.com/docs/knowledge-base/403-error-resend-dev-domain), [Cloudflare rate limit](https://developers.cloudflare.com/workers/runtime-apis/bindings/rate-limit/).
+
+## Triển khai trên Vercel (đang dùng)
+
+Website chạy ở `https://namasushi.vercel.app` (nhúng iframe vào Webcake trên `nama-sushi.de`). API gửi mail là `api/reservations.mjs`, dùng lại `resend-worker.mjs`. Đặt trong Vercel → Settings → Environment Variables (Production):
+
+- `RESEND_API_KEY`: key Sending access của `nama-sushi.de`
+- `MAIL_FROM`: `NAMA <reservierung@nama-sushi.de>`
+- `MAIL_TO`: email nhận (thử: email người vận hành; chính thức: `nama2025.sushi@gmail.com`)
+- `PUBLIC_SITE_ORIGIN`: `https://namasushi.vercel.app`
+- `MAIL_CC`: tùy chọn
+
+Đổi biến môi trường xong phải Redeploy mới có hiệu lực. Giới hạn 5 yêu cầu/phút/IP nằm trong bộ nhớ từng instance, chỉ là chống gửi dồn cơ bản.
