@@ -1,5 +1,5 @@
 import {bookingError,bookingSubject} from './dist/booking.mjs';
-import {reservationEmailHTML} from './email-template.mjs';
+import {reservationEmailHTML,guestConfirmationHTML,guestConfirmationSubject} from './email-template.mjs';
 
 const json=(body,status,headers)=>Response.json(body,{status,headers:{...headers,'Cache-Control':'no-store'}});
 export async function handleReservation(request,env,send=fetch) {
@@ -34,7 +34,15 @@ export async function handleReservation(request,env,send=fetch) {
   const response=await send('https://api.resend.com/emails',{method:'POST',headers:{Authorization:`Bearer ${env.RESEND_API_KEY}`,'Content-Type':'application/json','Idempotency-Key':`nama-reservation/${data.requestId}`},body:JSON.stringify(message),signal:AbortSignal.timeout(12000)});
   const result=await response.json();
   if(!response.ok||typeof result.id!=='string'||!result.id)return json({success:false,message:'Ihre Anfrage konnte nicht übermittelt werden. Bitte versuchen Sie es später erneut oder reservieren Sie telefonisch.'},502,headers);
+  await sendGuestConfirmation(data,env,send);
   return json({success:true,id:result.id},200,headers);
  }catch{return json({success:false,message:'Keine eindeutige Rückmeldung vom Versanddienst. Bitte rufen Sie uns an, bevor Sie die Anfrage erneut senden.'},502,headers);}
+}
+// Lỗi thư cho khách không làm hỏng đơn: thư cho nhà hàng đã đi, báo lỗi sẽ khiến khách gửi trùng.
+async function sendGuestConfirmation(data,env,send) {
+ const replyTo=env.MAIL_REPLY_TO||env.MAIL_TO.split(',')[0].trim();
+ try {
+  await send('https://api.resend.com/emails',{method:'POST',headers:{Authorization:`Bearer ${env.RESEND_API_KEY}`,'Content-Type':'application/json','Idempotency-Key':`nama-confirmation/${data.requestId}`},body:JSON.stringify({from:env.MAIL_FROM,to:[data.email.trim()],reply_to:replyTo,subject:guestConfirmationSubject(data),html:guestConfirmationHTML(data)}),signal:AbortSignal.timeout(8000)});
+ }catch{}
 }
 export default {fetch:(request,env)=>handleReservation(request,env)};
