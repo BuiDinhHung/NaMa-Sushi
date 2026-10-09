@@ -30,7 +30,7 @@ function harness({enabled=true,result={success:'true'},networkError=false,provid
  let date=new Date();date.setUTCDate(date.getUTCDate()+2);while(date.getUTCDay()===1)date.setUTCDate(date.getUTCDate()+1);
  const data={name:'Test Guest',phone:'+49 123456789',email:'test@example.com',date:date.toISOString().slice(0,10),time:'18:00',guests:'2',privacy:'on',note:'',website:''};
  const button={disabled:false,textContent:''},status={textContent:''};
- const form={elements:{date:{},time:{add(){}},guests:{add(){}}},dataset:{},querySelector:()=>button,addEventListener(type,fn){handler=fn;},reset(){resets++;}};
+ const form={elements:{date:{addEventListener(){}},time:{add(){},options:[],addEventListener(){}},guests:{add(){}}},dataset:{},querySelector:()=>button,addEventListener(type,fn){handler=fn;},reset(){resets++;}};
  const nodes={'#reservation-form':form,'#form-status':status,'#booking-summary':{textContent:''},'#success-dialog':{showModal(){opened++;}}};
  const context=vm.createContext({console,Intl,Date,AbortSignal,Error,TypeError,crypto:globalThis.crypto,FormData:class{constructor(){return Object.entries(data);}},Option:class{},window:{},document:{querySelector:s=>nodes[s]||null,querySelectorAll:()=>[],addEventListener(){}},fetch:async(url,options)=>{if(url==='booking-config.json')return {ok:true,json:async()=>({recipient:'test@example.com',cc:'copy@example.com',enabled,provider,endpoint:'https://api.example/api/reservations'})};sent++;assert.equal(options.method,'POST');const payload=JSON.parse(options.body);if(provider==='resend'){assert.equal(url,'https://api.example/api/reservations');assert.equal(payload.guests,'2');assert.equal(payload.privacy,'on');assert.match(payload.requestId,/^[a-f\d-]{36}$/);assert.equal(payload._subject,undefined);ids.push(payload.requestId);}else{assert.equal(payload.Personen,'2');assert.equal(payload._template,'table');assert.equal(payload._cc,'copy@example.com');assert.equal(payload._replyto,data.email);assert.match(payload._subject,/NAMA.*18:00 Uhr.*2 Gäste/);assert(payload.Termin.includes('2026')||payload.Termin.includes(String(date.getUTCFullYear())));assert(!payload.Termin.includes('T12:'));}if(networkError)throw new TypeError('offline');return {ok:true,json:async()=>result};}});
  vm.runInContext(source,context);
@@ -49,6 +49,12 @@ assert.equal(email._template,'table');assert.equal(email._subject,'[NAMA] Neue T
 assert.equal(email.Termin,'Freitag, 09. Oktober 2026, 18:30 Uhr (Bad Oldesloe)');assert.equal(email.Gast,'Max Mustermann');assert.equal(email['Wünsche und Hinweise'],'Keine besonderen Wünsche');assert.equal(email._cc,'copy@example.com');
 assert.equal(vm.runInContext(`berlinNow(new Date('2026-10-06T22:30:00Z')).date`,ctx),'2026-10-07');
 assert.equal(vm.runInContext(`berlinNow(new Date('2026-12-06T22:30:00Z')).date`,ctx),'2026-12-06');
+// 2026-10-14 16:10 Berlin (UTC+2): 16:30 nur 20 Min. entfernt, 16:40 ist die Untergrenze, 17:00 erlaubt.
+const at=`new Date('2026-10-14T14:10:00Z')`,base=`{name:'A',phone:'+49 123456789',email:'a@b.de',date:'2026-10-14',guests:'2',privacy:'on'}`;
+assert.match(vm.runInContext(`bookingError({...${base},time:'16:30'},${at})`,ctx),/30 Minuten/);
+assert.equal(vm.runInContext(`bookingError({...${base},time:'17:00'},${at})`,ctx),'');
+assert.equal(vm.runInContext(`bookingError({...${base},time:'16:30'},new Date('2026-10-14T14:00:00Z'))`,ctx),'');
+assert.equal(vm.runInContext(`bookingError({...${base},date:'2026-10-15',time:'12:00'},new Date('2026-10-14T21:50:00Z'))`,ctx),'');
 console.log('PASS: 139 menu entries, 65 unique photographs (23 generated and 42 originals), responsive hero, 20 landscape menu images, saved prompts, routes, German email format, compact table template, Reply-To/CC, booking validation, Berlin timezone, success/failure and duplicate-submit protection. Email requests mocked; no email sent.');
 
 const htmlEmail=reservationEmailHTML({name:'<script>alert(1)</script>',email:'guest@example.com',phone:'+49 123456789',date:'2026-10-21',time:'21:30',guests:'5',note:'<img src=x onerror=alert(1)>\nAm Fenster'});

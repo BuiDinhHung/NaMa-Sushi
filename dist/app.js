@@ -1,4 +1,4 @@
-import {berlinNow,bookingError,bookingSubject} from './booking.mjs';
+import {berlinNow,bookingError,bookingSubject,earliestBookingTime} from './booking.mjs';
 const $ = (s) => document.querySelector(s);
 const escapeHTML = (s) => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const navToggle = $('.nav-toggle');
@@ -62,8 +62,16 @@ function bookingEmail(data, config) {
 let pendingBooking;
 const form=$('#reservation-form');
 if(form){
- form.elements.date.min=berlinNow().date;
  for(let hour=12;hour<=21;hour++) for(const minute of ['00','30'])form.elements.time.add(new Option(`${hour}:${minute} Uhr`,`${hour}:${minute}`));
+ // Hôm nay chỉ cho chọn giờ cách hiện tại ít nhất 30 phút; hết giờ thì bắt đầu từ ngày mai.
+ const updateTimes=()=>{
+  const {date,time}=form.elements,today=berlinNow().date,earliest=earliestBookingTime();
+  const tomorrow=new Date(today+'T12:00:00Z');tomorrow.setUTCDate(tomorrow.getUTCDate()+1);
+  date.min=earliest>21*60+30?tomorrow.toISOString().slice(0,10):today;
+  for(const option of time.options){if(!option.value)continue;const [h,m]=option.value.split(':').map(Number);option.disabled=date.value===today&&h*60+m<earliest;}
+  if(time.options[time.selectedIndex]?.disabled)time.value='';
+ };
+ updateTimes();form.elements.date.addEventListener('change',updateTimes);form.elements.time.addEventListener('focus',updateTimes);
  for(let n=1;n<=10;n++)form.elements.guests.add(new Option(`${n} ${n===1?'Person':'Personen'}`,String(n)));
  form.addEventListener('submit',async e=>{
   e.preventDefault();if(form.dataset.sending==='true')return;
