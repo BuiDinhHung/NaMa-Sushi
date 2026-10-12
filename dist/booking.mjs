@@ -27,5 +27,5 @@ export function bookingError(data, now = new Date()) {
 }
 export function bookingSubject(data) {
  const date=new Intl.DateTimeFormat('de-DE',{day:'2-digit',month:'2-digit',year:'numeric',timeZone:'UTC'}).format(new Date(data.date+'T12:00:00Z'));
- return `[NAMA] Neue Tischanfrage | ${date}, ${data.time} Uhr | ${data.guests} ${data.guests==='1'?'Gast':'Gäste'} | ${data.name.replace(/\s+/g,' ').trim()}`;
+ return `[NAMA] Neue Reservierung | ${date}, ${data.time} Uhr | ${data.guests} ${data.guests==='1'?'Gast':'Gäste'} | ${data.name.replace(/\s+/g,' ').trim()}`;
 }

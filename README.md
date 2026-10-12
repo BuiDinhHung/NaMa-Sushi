@@ -16,7 +16,7 @@ Mở http://127.0.0.1:4173. Kiểm tra: `node check.mjs`.
 - `dist/booking-config.json` đang giữ cấu hình demo đã có: `enabled: true`, gửi đến mã FormSubmit ẩn danh và CC nhà hàng. Phiên chỉnh ảnh/format email này không thay đổi người nhận.
 - Tích hợp đã viết cho FormSubmit AJAX. Chủ hộp thư phải xác nhận email kích hoạt của FormSubmit cho URL triển khai trước; xem https://formsubmit.co/ và https://formsubmit.co/ajax-documentation.
 - Sau khi xác nhận hộp thư, kích hoạt dịch vụ và kiểm tra một yêu cầu có đánh dấu TEST được nhận thực tế, chuyển `enabled` thành `true` và xuất bản lại. Không gửi đơn thử cho nhà hàng nếu chưa được yêu cầu.
-- Thông báo thành công chỉ hiện khi API trả về thành công; thông báo nêu rõ đây là yêu cầu, chưa phải bàn đã được nhà hàng xác nhận. Không có email tự động cho khách qua AJAX. Nhà hàng trả lời trực tiếp qua Reply-To của khách.
+- Đặt bàn được chấp nhận ngay khi API trả về thành công; form và email thông báo bàn đã được xác nhận, không cần quán liên hệ xác nhận thêm. Resend gửi email tự động cho khách; FormSubmit AJAX không gửi email tự động cho khách.
 - Khi lỗi, dữ liệu form được giữ lại; form chặn gửi trùng khi đang xử lý, ngày quá khứ, thứ Hai và giờ ngoài khung phục vụ. Tất cả giờ tính theo Europe/Berlin.
 - `check.mjs` kiểm tra các tình huống bằng phản hồi giả lập, không gửi email thật. Chưa kiểm tra hộp thư đầu cuối.
 

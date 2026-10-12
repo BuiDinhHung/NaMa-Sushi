@@ -55,7 +55,7 @@ function bookingEmail(data, config) {
   Termin:`${date}, ${data.time} Uhr (Bad Oldesloe)`,Personen:data.guests,
   Gast:data.name.trim(),Telefon:data.phone.trim(),email:data.email.trim(),
   'Wünsche und Hinweise':data.note?.trim()||'Keine besonderen Wünsche',
-  Status:'Bitte Verfügbarkeit prüfen und dem Gast per Antwort auf diese E-Mail bestätigen. Noch keine bestätigte Reservierung.',
+  Status:'Reservierung automatisch bestätigt. Eine persönliche Bestätigung ist nicht erforderlich.',
   _honey:data.website||''
  };
 }
@@ -96,7 +96,7 @@ if(form){
    $('#booking-summary').textContent=`${new Intl.DateTimeFormat('de-DE',{dateStyle:'long',timeZone:'UTC'}).format(new Date(data.date+'T12:00:00Z'))} · ${data.time} Uhr · ${data.guests} ${data.guests==='1'?'Person':'Personen'}`;
    $('#success-dialog').showModal();form.reset();pendingBooking=undefined;
   }catch(error){status.textContent=error.name==='TimeoutError'?'Keine eindeutige Rückmeldung vom Versanddienst. Bitte rufen Sie uns an, bevor Sie die Anfrage erneut senden.':(error instanceof TypeError?'Verbindung fehlgeschlagen. Bitte prüfen Sie Ihre Internetverbindung oder rufen Sie uns an.':error.message);}
-  finally{delete form.dataset.sending;button.disabled=false;button.textContent='Reservierung anfragen';}
+  finally{delete form.dataset.sending;button.disabled=false;button.textContent='Tisch reservieren';}
  });
 }
 
